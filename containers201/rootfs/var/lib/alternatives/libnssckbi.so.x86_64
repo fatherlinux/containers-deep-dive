@@ -1,0 +1,7 @@
+auto
+/usr/lib64/libnssckbi.so
+
+/usr/lib64/pkcs11/p11-kit-trust.so
+30
+/usr/lib64/nss/libnssckbi.so
+10

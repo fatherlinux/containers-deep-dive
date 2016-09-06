@@ -1,0 +1,5 @@
+# dist macros.
+
+%rhel 7
+%dist .el7
+%el7 1

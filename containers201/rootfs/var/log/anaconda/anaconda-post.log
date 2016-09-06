@@ -1,0 +1,61 @@
+/usr/share/i18n/locales/en_US:7: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:8: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:9: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:11: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:14: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:15: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:16: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:17: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:19: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:20: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:21: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:22: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:23: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:24: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:25: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:26: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:27: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:28: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:29: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:34: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_GB:50: non-symbolic character value should not be used
+/usr/share/i18n/locales/i18n:1425: non-symbolic character value should not be used
+/usr/share/i18n/locales/i18n:1674: non-symbolic character value should not be used
+/usr/share/i18n/locales/i18n:1719: non-symbolic character value should not be used
+/usr/share/i18n/locales/i18n:1756: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_GB:53: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_GB:59: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_GB:152: non-symbolic character value should not be used
+/usr/share/i18n/locales/en_US:40: non-symbolic character value should not be used
+/usr/share/i18n/locales/iso14651_t1:3: non-symbolic character value should not be used
+/usr/share/i18n/locales/translit_neutral:10: non-symbolic character value should not be used
+/usr/share/i18n/locales/translit_neutral:11: non-symbolic character value should not be used
+/usr/share/i18n/locales/translit_neutral:12: non-symbolic character value should not be used
+/usr/share/i18n/locales/translit_neutral:13: non-symbolic character value should not be used
+/usr/share/i18n/locales/translit_neutral:14: non-symbolic character value should not be used
+/usr/share/i18n/locales/translit_neutral:15: non-symbolic character value should not be used
+/usr/share/i18n/locales/translit_neutral:16: non-symbolic character value should not be used
+/usr/share/i18n/locales/translit_neutral:17: non-symbolic character value should not be used
+LC_NAME: field `name_gen' not defined
+LC_IDENTIFICATION: field `audience' not defined
+LC_IDENTIFICATION: field `application' not defined
+LC_IDENTIFICATION: field `abbreviation' not defined
+LC_IDENTIFICATION: no identification for category `LC_MEASUREMENT'
+LC_CTYPE: table for class "upper": 1756 bytes
+LC_CTYPE: table for class "lower": 1756 bytes
+LC_CTYPE: table for class "alpha": 4320 bytes
+LC_CTYPE: table for class "digit": 600 bytes
+LC_CTYPE: table for class "xdigit": 600 bytes
+LC_CTYPE: table for class "space": 856 bytes
+LC_CTYPE: table for class "print": 5976 bytes
+LC_CTYPE: table for class "graph": 5976 bytes
+LC_CTYPE: table for class "blank": 856 bytes
+LC_CTYPE: table for class "cntrl": 664 bytes
+LC_CTYPE: table for class "punct": 4824 bytes
+LC_CTYPE: table for class "alnum": 4320 bytes
+LC_CTYPE: table for class "combining": 3152 bytes
+LC_CTYPE: table for class "combining_level3": 2832 bytes
+LC_CTYPE: table for map "toupper": 16924 bytes
+LC_CTYPE: table for map "tolower": 15388 bytes
+LC_CTYPE: table for map "totitle": 16924 bytes
+LC_CTYPE: table for width: 26712 bytes

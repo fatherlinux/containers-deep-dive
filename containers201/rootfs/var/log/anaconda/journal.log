@@ -1,0 +1,1070 @@
+-- Logs begin at Wed 2016-07-27 16:14:28 UTC, end at Wed 2016-07-27 17:18:48 UTC. --
+Jul 27 16:14:28 localhost systemd-journal[83]: Runtime journal is using 8.0M (max allowed 100.0M, trying to leave 150.0M free of 992.5M available → current limit 100.0M).
+Jul 27 16:14:28 localhost systemd-journal[83]: Runtime journal is using 8.0M (max allowed 100.0M, trying to leave 150.0M free of 992.5M available → current limit 100.0M).
+Jul 27 16:14:28 localhost kernel: Initializing cgroup subsys cpuset
+Jul 27 16:14:28 localhost kernel: Initializing cgroup subsys cpu
+Jul 27 16:14:28 localhost kernel: Initializing cgroup subsys cpuacct
+Jul 27 16:14:28 localhost kernel: Linux version 3.10.0-327.22.2.el7.x86_64 (mockbuild@x86-030.build.eng.bos.redhat.com) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) ) #1 SMP Thu Jun 9 10:09:10 EDT 2016
+Jul 27 16:14:28 localhost kernel: Command line: method=http://download.eng.bos.redhat.com/devel/candidate-trees/RHEL-7.2-updates-20160727.0/compose/Server/x86_64/os/ ks=file:/ks.cfg
+Jul 27 16:14:28 localhost kernel: Disabled fast string operations
+Jul 27 16:14:28 localhost kernel: e820: BIOS-provided physical RAM map:
+Jul 27 16:14:28 localhost kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009dbff] usable
+Jul 27 16:14:28 localhost kernel: BIOS-e820: [mem 0x000000000009dc00-0x000000000009ffff] reserved
+Jul 27 16:14:28 localhost kernel: BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+Jul 27 16:14:28 localhost kernel: BIOS-e820: [mem 0x0000000000100000-0x000000007fffcfff] usable
+Jul 27 16:14:28 localhost kernel: BIOS-e820: [mem 0x000000007fffd000-0x000000007fffffff] reserved
+Jul 27 16:14:28 localhost kernel: BIOS-e820: [mem 0x00000000fffbc000-0x00000000ffffffff] reserved
+Jul 27 16:14:28 localhost kernel: NX (Execute Disable) protection: active
+Jul 27 16:14:28 localhost kernel: SMBIOS 2.4 present.
+Jul 27 16:14:28 localhost kernel: DMI: Red Hat KVM, BIOS 0.5.1 01/01/2007
+Jul 27 16:14:28 localhost kernel: Hypervisor detected: KVM
+Jul 27 16:14:28 localhost kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Jul 27 16:14:28 localhost kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Jul 27 16:14:28 localhost kernel: AGP: No AGP bridge found
+Jul 27 16:14:28 localhost kernel: e820: last_pfn = 0x7fffd max_arch_pfn = 0x400000000
+Jul 27 16:14:28 localhost kernel: MTRR default type: write-back
+Jul 27 16:14:28 localhost kernel: MTRR fixed ranges enabled:
+Jul 27 16:14:28 localhost kernel:   00000-9FFFF write-back
+Jul 27 16:14:28 localhost kernel:   A0000-BFFFF uncachable
+Jul 27 16:14:28 localhost kernel:   C0000-FFFFF write-protect
+Jul 27 16:14:28 localhost kernel: MTRR variable ranges enabled:
+Jul 27 16:14:28 localhost kernel:   0 base 0000E0000000 mask 3FFFE0000000 uncachable
+Jul 27 16:14:28 localhost kernel:   1 disabled
+Jul 27 16:14:28 localhost kernel:   2 disabled
+Jul 27 16:14:28 localhost kernel:   3 disabled
+Jul 27 16:14:28 localhost kernel:   4 disabled
+Jul 27 16:14:28 localhost kernel:   5 disabled
+Jul 27 16:14:28 localhost kernel:   6 disabled
+Jul 27 16:14:28 localhost kernel:   7 disabled
+Jul 27 16:14:28 localhost kernel: PAT not supported by CPU.
+Jul 27 16:14:28 localhost kernel: found SMP MP-table at [mem 0x000fda50-0x000fda5f] mapped at [ffff8800000fda50]
+Jul 27 16:14:28 localhost kernel: Base memory trampoline at [ffff880000097000] 97000 size 24576
+Jul 27 16:14:28 localhost kernel: init_memory_mapping: [mem 0x00000000-0x000fffff]
+Jul 27 16:14:28 localhost kernel:  [mem 0x00000000-0x000fffff] page 4k
+Jul 27 16:14:28 localhost kernel: BRK [0x01f33000, 0x01f33fff] PGTABLE
+Jul 27 16:14:28 localhost kernel: BRK [0x01f34000, 0x01f34fff] PGTABLE
+Jul 27 16:14:28 localhost kernel: BRK [0x01f35000, 0x01f35fff] PGTABLE
+Jul 27 16:14:28 localhost kernel: init_memory_mapping: [mem 0x7d800000-0x7d9fffff]
+Jul 27 16:14:28 localhost kernel:  [mem 0x7d800000-0x7d9fffff] page 2M
+Jul 27 16:14:28 localhost kernel: BRK [0x01f36000, 0x01f36fff] PGTABLE
+Jul 27 16:14:28 localhost kernel: init_memory_mapping: [mem 0x7c000000-0x7d7fffff]
+Jul 27 16:14:28 localhost kernel:  [mem 0x7c000000-0x7d7fffff] page 2M
+Jul 27 16:14:28 localhost kernel: init_memory_mapping: [mem 0x00100000-0x7bffffff]
+Jul 27 16:14:28 localhost kernel:  [mem 0x00100000-0x001fffff] page 4k
+Jul 27 16:14:28 localhost kernel:  [mem 0x00200000-0x7bffffff] page 2M
+Jul 27 16:14:28 localhost kernel: init_memory_mapping: [mem 0x7da00000-0x7fffcfff]
+Jul 27 16:14:28 localhost kernel:  [mem 0x7da00000-0x7fdfffff] page 2M
+Jul 27 16:14:28 localhost kernel:  [mem 0x7fe00000-0x7fffcfff] page 4k
+Jul 27 16:14:28 localhost kernel: BRK [0x01f37000, 0x01f37fff] PGTABLE
+Jul 27 16:14:28 localhost kernel: RAMDISK: [mem 0x7da2e000-0x7ffeffff]
+Jul 27 16:14:28 localhost kernel: ACPI: RSDP 00000000000fda00 00014 (v00 BOCHS )
+Jul 27 16:14:28 localhost kernel: ACPI: RSDT 000000007fffd670 00034 (v01 BOCHS  BXPCRSDT 00000001 BXPC 00000001)
+Jul 27 16:14:28 localhost kernel: ACPI: FACP 000000007ffffe40 00074 (v01 BOCHS  BXPCFACP 00000001 BXPC 00000001)
+Jul 27 16:14:28 localhost kernel: ACPI: DSDT 000000007fffd950 024A2 (v01   BXPC   BXDSDT 00000001 INTL 20090123)
+Jul 27 16:14:28 localhost kernel: ACPI: FACS 000000007ffffe00 00040
+Jul 27 16:14:28 localhost kernel: ACPI: SSDT 000000007fffd8b0 0009E (v01 BOCHS  BXPCSSDT 00000001 BXPC 00000001)
+Jul 27 16:14:28 localhost kernel: ACPI: APIC 000000007fffd7c0 00078 (v01 BOCHS  BXPCAPIC 00000001 BXPC 00000001)
+Jul 27 16:14:28 localhost kernel: ACPI: SSDT 000000007fffd6b0 0010F (v01   BXPC BXSSDTPC 00000001 INTL 20090123)
+Jul 27 16:14:28 localhost kernel: ACPI: Local APIC address 0xfee00000
+Jul 27 16:14:28 localhost kernel: No NUMA configuration found
+Jul 27 16:14:28 localhost kernel: Faking a node at [mem 0x0000000000000000-0x000000007fffcfff]
+Jul 27 16:14:28 localhost kernel: Initmem setup node 0 [mem 0x00000000-0x7fffcfff]
+Jul 27 16:14:28 localhost kernel:   NODE_DATA [mem 0x7da07000-0x7da2dfff]
+Jul 27 16:14:28 localhost kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Jul 27 16:14:28 localhost kernel: kvm-clock: cpu 0, msr 0:7d9b7001, primary cpu clock
+Jul 27 16:14:28 localhost kernel:  [ffffea0000000000-ffffea0001ffffff] PMD -> [ffff88007b000000-ffff88007cffffff] on node 0
+Jul 27 16:14:28 localhost kernel: Zone ranges:
+Jul 27 16:14:28 localhost kernel:   DMA      [mem 0x00001000-0x00ffffff]
+Jul 27 16:14:28 localhost kernel:   DMA32    [mem 0x01000000-0xffffffff]
+Jul 27 16:14:28 localhost kernel:   Normal   empty
+Jul 27 16:14:28 localhost kernel: Movable zone start for each node
+Jul 27 16:14:28 localhost kernel: Early memory node ranges
+Jul 27 16:14:28 localhost kernel:   node   0: [mem 0x00001000-0x0009cfff]
+Jul 27 16:14:28 localhost kernel:   node   0: [mem 0x00100000-0x7fffcfff]
+Jul 27 16:14:28 localhost kernel: On node 0 totalpages: 524185
+Jul 27 16:14:28 localhost kernel:   DMA zone: 64 pages used for memmap
+Jul 27 16:14:28 localhost kernel:   DMA zone: 21 pages reserved
+Jul 27 16:14:28 localhost kernel:   DMA zone: 3996 pages, LIFO batch:0
+Jul 27 16:14:28 localhost kernel:   DMA32 zone: 8128 pages used for memmap
+Jul 27 16:14:28 localhost kernel:   DMA32 zone: 520189 pages, LIFO batch:31
+Jul 27 16:14:28 localhost kernel: ACPI: PM-Timer IO Port: 0xb008
+Jul 27 16:14:28 localhost kernel: ACPI: Local APIC address 0xfee00000
+Jul 27 16:14:28 localhost kernel: ACPI: LAPIC (acpi_id[0x00] lapic_id[0x00] enabled)
+Jul 27 16:14:28 localhost kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+Jul 27 16:14:28 localhost kernel: ACPI: IOAPIC (id[0x00] address[0xfec00000] gsi_base[0])
+Jul 27 16:14:28 localhost kernel: IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+Jul 27 16:14:28 localhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Jul 27 16:14:28 localhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+Jul 27 16:14:28 localhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Jul 27 16:14:28 localhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+Jul 27 16:14:28 localhost kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+Jul 27 16:14:28 localhost kernel: ACPI: IRQ0 used by override.
+Jul 27 16:14:28 localhost kernel: ACPI: IRQ5 used by override.
+Jul 27 16:14:28 localhost kernel: ACPI: IRQ9 used by override.
+Jul 27 16:14:28 localhost kernel: ACPI: IRQ10 used by override.
+Jul 27 16:14:28 localhost kernel: ACPI: IRQ11 used by override.
+Jul 27 16:14:28 localhost kernel: Using ACPI (MADT) for SMP configuration information
+Jul 27 16:14:28 localhost kernel: smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+Jul 27 16:14:28 localhost kernel: PM: Registered nosave memory: [mem 0x0009d000-0x0009dfff]
+Jul 27 16:14:28 localhost kernel: PM: Registered nosave memory: [mem 0x0009e000-0x0009ffff]
+Jul 27 16:14:28 localhost kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+Jul 27 16:14:28 localhost kernel: PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+Jul 27 16:14:28 localhost kernel: e820: [mem 0x80000000-0xfffbbfff] available for PCI devices
+Jul 27 16:14:28 localhost kernel: Booting paravirtualized kernel on KVM
+Jul 27 16:14:28 localhost kernel: setup_percpu: NR_CPUS:5120 nr_cpumask_bits:1 nr_cpu_ids:1 nr_node_ids:1
+Jul 27 16:14:28 localhost kernel: PERCPU: Embedded 31 pages/cpu @ffff88007d600000 s87232 r8192 d31552 u2097152
+Jul 27 16:14:28 localhost kernel: pcpu-alloc: s87232 r8192 d31552 u2097152 alloc=1*2097152
+Jul 27 16:14:28 localhost kernel: pcpu-alloc: [0] 0 
+Jul 27 16:14:28 localhost kernel: kvm-stealtime: cpu 0, msr 7d60d240
+Jul 27 16:14:28 localhost kernel: Built 1 zonelists in Node order, mobility grouping on.  Total pages: 515972
+Jul 27 16:14:28 localhost kernel: Policy zone: DMA32
+Jul 27 16:14:28 localhost kernel: Kernel command line: method=http://download.eng.bos.redhat.com/devel/candidate-trees/RHEL-7.2-updates-20160727.0/compose/Server/x86_64/os/ ks=file:/ks.cfg
+Jul 27 16:14:28 localhost kernel: PID hash table entries: 4096 (order: 3, 32768 bytes)
+Jul 27 16:14:28 localhost kernel: AGP: Checking aperture...
+Jul 27 16:14:28 localhost kernel: AGP: No AGP bridge found
+Jul 27 16:14:28 localhost kernel: Memory: 2008788k/2097140k available (6444k kernel code, 400k absent, 87952k reserved, 4262k data, 1624k init)
+Jul 27 16:14:28 localhost kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Jul 27 16:14:28 localhost kernel: Hierarchical RCU implementation.
+Jul 27 16:14:28 localhost kernel:         RCU restricting CPUs from NR_CPUS=5120 to nr_cpu_ids=1.
+Jul 27 16:14:28 localhost kernel:         Offload RCU callbacks from all CPUs
+Jul 27 16:14:28 localhost kernel:         Offload RCU callbacks from CPUs: 0.
+Jul 27 16:14:28 localhost kernel: NR_IRQS:327936 nr_irqs:256 0
+Jul 27 16:14:28 localhost kernel: Console: colour VGA+ 80x25
+Jul 27 16:14:28 localhost kernel: console [tty0] enabled
+Jul 27 16:14:28 localhost kernel: allocated 8388608 bytes of page_cgroup
+Jul 27 16:14:28 localhost kernel: please try 'cgroup_disable=memory' option if you don't want memory cgroups
+Jul 27 16:14:28 localhost kernel: tsc: Detected 2399.998 MHz processor
+Jul 27 16:14:28 localhost kernel: Calibrating delay loop (skipped) preset value.. 4799.99 BogoMIPS (lpj=2399998)
+Jul 27 16:14:28 localhost kernel: pid_max: default: 32768 minimum: 301
+Jul 27 16:14:28 localhost kernel: Security Framework initialized
+Jul 27 16:14:28 localhost kernel: SELinux:  Initializing.
+Jul 27 16:14:28 localhost kernel: SELinux:  Starting in permissive mode
+Jul 27 16:14:28 localhost kernel: Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes)
+Jul 27 16:14:28 localhost kernel: Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes)
+Jul 27 16:14:28 localhost kernel: Mount-cache hash table entries: 4096
+Jul 27 16:14:28 localhost kernel: Initializing cgroup subsys memory
+Jul 27 16:14:28 localhost kernel: Initializing cgroup subsys devices
+Jul 27 16:14:28 localhost kernel: Initializing cgroup subsys freezer
+Jul 27 16:14:28 localhost kernel: Initializing cgroup subsys net_cls
+Jul 27 16:14:28 localhost kernel: Initializing cgroup subsys blkio
+Jul 27 16:14:28 localhost kernel: Initializing cgroup subsys perf_event
+Jul 27 16:14:28 localhost kernel: Initializing cgroup subsys hugetlb
+Jul 27 16:14:28 localhost kernel: Disabled fast string operations
+Jul 27 16:14:28 localhost kernel: mce: CPU supports 10 MCE banks
+Jul 27 16:14:28 localhost kernel: Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+                                  Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0
+                                  tlb_flushall_shift: 6
+Jul 27 16:14:28 localhost kernel: Freeing SMP alternatives: 28k freed
+Jul 27 16:14:28 localhost kernel: ACPI: Core revision 20130517
+Jul 27 16:14:28 localhost kernel: ACPI: All ACPI Tables successfully acquired
+Jul 27 16:14:28 localhost kernel: ftrace: allocating 24601 entries in 97 pages
+Jul 27 16:14:28 localhost kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Jul 27 16:14:28 localhost kernel: smpboot: CPU0: Intel QEMU Virtual CPU version (cpu64-rhel6) (fam: 06, model: 0d, stepping: 03)
+Jul 27 16:14:28 localhost kernel: Performance Events: Broken PMU hardware detected, using software events only.
+Jul 27 16:14:28 localhost kernel: Failed to access perfctr msr (MSR c2 is 0)
+Jul 27 16:14:28 localhost kernel: Brought up 1 CPUs
+Jul 27 16:14:28 localhost kernel: smpboot: Total of 1 processors activated (4799.99 BogoMIPS)
+Jul 27 16:14:28 localhost kernel: NMI watchdog: disabled (cpu0): hardware events not enabled
+Jul 27 16:14:28 localhost kernel: devtmpfs: initialized
+Jul 27 16:14:28 localhost kernel: EVM: security.selinux
+Jul 27 16:14:28 localhost kernel: EVM: security.ima
+Jul 27 16:14:28 localhost kernel: EVM: security.capability
+Jul 27 16:14:28 localhost kernel: atomic64 test passed for x86-64 platform with CX8 and with SSE
+Jul 27 16:14:28 localhost kernel: NET: Registered protocol family 16
+Jul 27 16:14:28 localhost kernel: ACPI: bus type PCI registered
+Jul 27 16:14:28 localhost kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Jul 27 16:14:28 localhost kernel: PCI: Using configuration type 1 for base access
+Jul 27 16:14:28 localhost kernel: ACPI: Added _OSI(Module Device)
+Jul 27 16:14:28 localhost kernel: ACPI: Added _OSI(Processor Device)
+Jul 27 16:14:28 localhost kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Jul 27 16:14:28 localhost kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Jul 27 16:14:28 localhost kernel: ACPI: EC: Look up EC in DSDT
+Jul 27 16:14:28 localhost kernel: ACPI: Interpreter enabled
+Jul 27 16:14:28 localhost kernel: ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S1_] (20130517/hwxface-571)
+Jul 27 16:14:28 localhost kernel: ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S2_] (20130517/hwxface-571)
+Jul 27 16:14:28 localhost kernel: ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S3_] (20130517/hwxface-571)
+Jul 27 16:14:28 localhost kernel: ACPI Exception: AE_NOT_FOUND, While evaluating Sleep State [\_S4_] (20130517/hwxface-571)
+Jul 27 16:14:28 localhost kernel: ACPI: (supports S0 S5)
+Jul 27 16:14:28 localhost kernel: ACPI: Using IOAPIC for interrupt routing
+Jul 27 16:14:28 localhost kernel: PCI: Ignoring host bridge windows from ACPI; if necessary, use "pci=use_crs" and report a bug
+Jul 27 16:14:28 localhost kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Jul 27 16:14:28 localhost kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+Jul 27 16:14:28 localhost kernel: acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+Jul 27 16:14:28 localhost kernel: acpi PNP0A03:00: host bridge window [io  0x0000-0x0cf7] (ignored)
+Jul 27 16:14:28 localhost kernel: acpi PNP0A03:00: host bridge window [io  0x0d00-0xffff] (ignored)
+Jul 27 16:14:28 localhost kernel: acpi PNP0A03:00: host bridge window [mem 0x000a0000-0x000bffff] (ignored)
+Jul 27 16:14:28 localhost kernel: acpi PNP0A03:00: host bridge window [mem 0xe0000000-0xfebfffff] (ignored)
+Jul 27 16:14:28 localhost kernel: PCI: root bus 00: using default resources
+Jul 27 16:14:28 localhost kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [1] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [2] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [3] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [4] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [5] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [6] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [7] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [8] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [9] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [10] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [11] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [12] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [13] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [14] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [15] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [16] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [17] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [18] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [19] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [20] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [21] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [22] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [23] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [24] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [25] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [26] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [27] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [28] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [29] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [30] registered
+Jul 27 16:14:28 localhost kernel: acpiphp: Slot [31] registered
+Jul 27 16:14:28 localhost kernel: PCI host bridge to bus 0000:00
+Jul 27 16:14:28 localhost kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Jul 27 16:14:28 localhost kernel: pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+Jul 27 16:14:28 localhost kernel: pci_bus 0000:00: root bus resource [mem 0x00000000-0x3fffffffffff]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.1: [8086:7010] type 00 class 0x010180
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.1: reg 0x20: [io  0xc000-0xc00f]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.2: [8086:7020] type 00 class 0x0c0300
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.2: reg 0x20: [io  0xc020-0xc03f]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.3: quirk: [io  0xb100-0xb10f] claimed by PIIX4 SMB
+Jul 27 16:14:28 localhost kernel: pci 0000:00:02.0: [1013:00b8] type 00 class 0x030000
+Jul 27 16:14:28 localhost kernel: pci 0000:00:02.0: reg 0x10: [mem 0xf0000000-0xf1ffffff pref]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:02.0: reg 0x14: [mem 0xf2000000-0xf2000fff]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:02.0: reg 0x30: [mem 0xf2010000-0xf201ffff pref]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:03.0: [1af4:1000] type 00 class 0x020000
+Jul 27 16:14:28 localhost kernel: pci 0000:00:03.0: reg 0x10: [io  0xc040-0xc05f]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:03.0: reg 0x14: [mem 0xf2020000-0xf2020fff]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:03.0: reg 0x30: [mem 0xf2030000-0xf203ffff pref]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:04.0: [1af4:1001] type 00 class 0x010000
+Jul 27 16:14:28 localhost kernel: pci 0000:00:04.0: reg 0x10: [io  0xc080-0xc0bf]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:04.0: reg 0x14: [mem 0xf2040000-0xf2040fff]
+Jul 27 16:14:28 localhost kernel: pci 0000:00:05.0: [1af4:1002] type 00 class 0x050000
+Jul 27 16:14:28 localhost kernel: pci 0000:00:05.0: reg 0x10: [io  0xc0c0-0xc0df]
+Jul 27 16:14:28 localhost kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 5 *10 11)
+Jul 27 16:14:28 localhost kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+Jul 27 16:14:28 localhost kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+Jul 27 16:14:28 localhost kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 5 10 *11)
+Jul 27 16:14:28 localhost kernel: ACPI: PCI Interrupt Link [LNKS] (IRQs *9)
+Jul 27 16:14:28 localhost kernel: ACPI: Enabled 16 GPEs in block 00 to 0F
+Jul 27 16:14:28 localhost kernel: vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+Jul 27 16:14:28 localhost kernel: vgaarb: loaded
+Jul 27 16:14:28 localhost kernel: vgaarb: bridge control possible 0000:00:02.0
+Jul 27 16:14:28 localhost kernel: SCSI subsystem initialized
+Jul 27 16:14:28 localhost kernel: ACPI: bus type USB registered
+Jul 27 16:14:28 localhost kernel: usbcore: registered new interface driver usbfs
+Jul 27 16:14:28 localhost kernel: usbcore: registered new interface driver hub
+Jul 27 16:14:28 localhost kernel: usbcore: registered new device driver usb
+Jul 27 16:14:28 localhost kernel: PCI: Using ACPI for IRQ routing
+Jul 27 16:14:28 localhost kernel: PCI: pci_cache_line_size set to 64 bytes
+Jul 27 16:14:28 localhost kernel: e820: reserve RAM buffer [mem 0x0009dc00-0x0009ffff]
+Jul 27 16:14:28 localhost kernel: e820: reserve RAM buffer [mem 0x7fffd000-0x7fffffff]
+Jul 27 16:14:28 localhost kernel: NetLabel: Initializing
+Jul 27 16:14:28 localhost kernel: NetLabel:  domain hash size = 128
+Jul 27 16:14:28 localhost kernel: NetLabel:  protocols = UNLABELED CIPSOv4
+Jul 27 16:14:28 localhost kernel: NetLabel:  unlabeled traffic allowed by default
+Jul 27 16:14:28 localhost kernel: Switching to clocksource kvm-clock
+Jul 27 16:14:28 localhost kernel: pnp: PnP ACPI init
+Jul 27 16:14:28 localhost kernel: ACPI: bus type PNP registered
+Jul 27 16:14:28 localhost kernel: pnp 00:00: Plug and Play ACPI device, IDs PNP0b00 (active)
+Jul 27 16:14:28 localhost kernel: pnp 00:01: Plug and Play ACPI device, IDs PNP0303 (active)
+Jul 27 16:14:28 localhost kernel: pnp 00:02: Plug and Play ACPI device, IDs PNP0f13 (active)
+Jul 27 16:14:28 localhost kernel: pnp 00:03: [dma 2]
+Jul 27 16:14:28 localhost kernel: pnp 00:03: Plug and Play ACPI device, IDs PNP0700 (active)
+Jul 27 16:14:28 localhost kernel: pnp 00:04: Plug and Play ACPI device, IDs PNP0501 (active)
+Jul 27 16:14:28 localhost kernel: pnp 00:05: Plug and Play ACPI device, IDs PNP0501 (active)
+Jul 27 16:14:28 localhost kernel: pnp: PnP ACPI: found 6 devices
+Jul 27 16:14:28 localhost kernel: ACPI: bus type PNP unregistered
+Jul 27 16:14:28 localhost kernel: pci_bus 0000:00: resource 4 [io  0x0000-0xffff]
+Jul 27 16:14:28 localhost kernel: pci_bus 0000:00: resource 5 [mem 0x00000000-0x3fffffffffff]
+Jul 27 16:14:28 localhost kernel: NET: Registered protocol family 2
+Jul 27 16:14:28 localhost kernel: TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+Jul 27 16:14:28 localhost kernel: TCP bind hash table entries: 16384 (order: 6, 262144 bytes)
+Jul 27 16:14:28 localhost kernel: TCP: Hash tables configured (established 16384 bind 16384)
+Jul 27 16:14:28 localhost kernel: TCP: reno registered
+Jul 27 16:14:28 localhost kernel: UDP hash table entries: 1024 (order: 3, 32768 bytes)
+Jul 27 16:14:28 localhost kernel: UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes)
+Jul 27 16:14:28 localhost kernel: NET: Registered protocol family 1
+Jul 27 16:14:28 localhost kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Release
+Jul 27 16:14:28 localhost kernel: pci 0000:00:01.0: Activating ISA DMA hang workarounds
+Jul 27 16:14:28 localhost kernel: ACPI: PCI Interrupt Link [LNKD] enabled at IRQ 11
+Jul 27 16:14:28 localhost kernel: pci 0000:00:02.0: Boot video device
+Jul 27 16:14:28 localhost kernel: PCI: CLS 0 bytes, default 64
+Jul 27 16:14:28 localhost kernel: Unpacking initramfs...
+Jul 27 16:14:28 localhost kernel: Freeing initrd memory: 38664k freed
+Jul 27 16:14:28 localhost kernel: microcode: CPU0 sig=0x6d3, pf=0x1, revision=0x1
+Jul 27 16:14:28 localhost kernel: microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+Jul 27 16:14:28 localhost kernel: sha1_ssse3: Neither AVX nor AVX2 nor SSSE3 is available/usable.
+Jul 27 16:14:28 localhost kernel: sha256_ssse3: Neither AVX nor SSSE3 is available/usable.
+Jul 27 16:14:28 localhost kernel: futex hash table entries: 256 (order: 2, 16384 bytes)
+Jul 27 16:14:28 localhost kernel: Initialise system trusted keyring
+Jul 27 16:14:28 localhost kernel: audit: initializing netlink socket (disabled)
+Jul 27 16:14:28 localhost kernel: type=2000 audit(1469636069.058:1): initialized
+Jul 27 16:14:28 localhost kernel: HugeTLB registered 2 MB page size, pre-allocated 0 pages
+Jul 27 16:14:28 localhost kernel: zpool: loaded
+Jul 27 16:14:28 localhost kernel: zbud: loaded
+Jul 27 16:14:28 localhost kernel: VFS: Disk quotas dquot_6.5.2
+Jul 27 16:14:28 localhost kernel: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Jul 27 16:14:28 localhost kernel: msgmni has been set to 3998
+Jul 27 16:14:28 localhost kernel: Key type big_key registered
+Jul 27 16:14:28 localhost kernel: SELinux:  Registering netfilter hooks
+Jul 27 16:14:28 localhost kernel: NET: Registered protocol family 38
+Jul 27 16:14:28 localhost kernel: Key type asymmetric registered
+Jul 27 16:14:28 localhost kernel: Asymmetric key parser 'x509' registered
+Jul 27 16:14:28 localhost kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+Jul 27 16:14:28 localhost kernel: io scheduler noop registered
+Jul 27 16:14:28 localhost kernel: io scheduler deadline registered (default)
+Jul 27 16:14:28 localhost kernel: io scheduler cfq registered
+Jul 27 16:14:28 localhost kernel: pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+Jul 27 16:14:28 localhost kernel: pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+Jul 27 16:14:28 localhost kernel: intel_idle: does not run on family 6 model 13
+Jul 27 16:14:28 localhost kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+Jul 27 16:14:28 localhost kernel: ACPI: Power Button [PWRF]
+Jul 27 16:14:28 localhost kernel: GHES: HEST is not enabled!
+Jul 27 16:14:28 localhost kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Jul 27 16:14:28 localhost kernel: 00:04: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+Jul 27 16:14:28 localhost kernel: 00:05: ttyS1 at I/O 0x2f8 (irq = 3) is a 16550A
+Jul 27 16:14:28 localhost kernel: Non-volatile memory driver v1.3
+Jul 27 16:14:28 localhost kernel: Linux agpgart interface v0.103
+Jul 27 16:14:28 localhost kernel: crash memory driver: version 1.1
+Jul 27 16:14:28 localhost kernel: rdac: device handler registered
+Jul 27 16:14:28 localhost kernel: hp_sw: device handler registered
+Jul 27 16:14:28 localhost kernel: emc: device handler registered
+Jul 27 16:14:28 localhost kernel: alua: device handler registered
+Jul 27 16:14:28 localhost kernel: libphy: Fixed MDIO Bus: probed
+Jul 27 16:14:28 localhost kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Jul 27 16:14:28 localhost kernel: ehci-pci: EHCI PCI platform driver
+Jul 27 16:14:28 localhost kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Jul 27 16:14:28 localhost kernel: ohci-pci: OHCI PCI platform driver
+Jul 27 16:14:28 localhost kernel: uhci_hcd: USB Universal Host Controller Interface driver
+Jul 27 16:14:28 localhost kernel: uhci_hcd 0000:00:01.2: UHCI Host Controller
+Jul 27 16:14:28 localhost kernel: uhci_hcd 0000:00:01.2: new USB bus registered, assigned bus number 1
+Jul 27 16:14:28 localhost kernel: uhci_hcd 0000:00:01.2: detected 2 ports
+Jul 27 16:14:28 localhost kernel: uhci_hcd 0000:00:01.2: irq 11, io base 0x0000c020
+Jul 27 16:14:28 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0001
+Jul 27 16:14:28 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jul 27 16:14:28 localhost kernel: usb usb1: Product: UHCI Host Controller
+Jul 27 16:14:28 localhost kernel: usb usb1: Manufacturer: Linux 3.10.0-327.22.2.el7.x86_64 uhci_hcd
+Jul 27 16:14:28 localhost kernel: usb usb1: SerialNumber: 0000:00:01.2
+Jul 27 16:14:28 localhost kernel: hub 1-0:1.0: USB hub found
+Jul 27 16:14:28 localhost kernel: hub 1-0:1.0: 2 ports detected
+Jul 27 16:14:28 localhost kernel: usbcore: registered new interface driver usbserial
+Jul 27 16:14:28 localhost kernel: usbcore: registered new interface driver usbserial_generic
+Jul 27 16:14:28 localhost kernel: usbserial: USB Serial support registered for generic
+Jul 27 16:14:28 localhost kernel: i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+Jul 27 16:14:28 localhost kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Jul 27 16:14:28 localhost kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Jul 27 16:14:28 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Jul 27 16:14:28 localhost kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+Jul 27 16:14:28 localhost kernel: rtc_cmos 00:00: RTC can wake from S4
+Jul 27 16:14:28 localhost kernel: rtc_cmos 00:00: rtc core: registered rtc_cmos as rtc0
+Jul 27 16:14:28 localhost kernel: rtc_cmos 00:00: alarms up to one day, 114 bytes nvram
+Jul 27 16:14:28 localhost kernel: cpuidle: using governor menu
+Jul 27 16:14:28 localhost kernel: hidraw: raw HID events driver (C) Jiri Kosina
+Jul 27 16:14:28 localhost kernel: usbcore: registered new interface driver usbhid
+Jul 27 16:14:28 localhost kernel: usbhid: USB HID core driver
+Jul 27 16:14:28 localhost kernel: drop_monitor: Initializing network drop monitor service
+Jul 27 16:14:28 localhost kernel: TCP: cubic registered
+Jul 27 16:14:28 localhost kernel: Initializing XFRM netlink socket
+Jul 27 16:14:28 localhost kernel: NET: Registered protocol family 10
+Jul 27 16:14:28 localhost kernel: NET: Registered protocol family 17
+Jul 27 16:14:28 localhost kernel: Loading compiled-in X.509 certificates
+Jul 27 16:14:28 localhost kernel: Loaded X.509 cert 'Red Hat Enterprise Linux Driver Update Program (key 3): bf57f3e87362bc7229d9f465321773dfd1f77a80'
+Jul 27 16:14:28 localhost kernel: Loaded X.509 cert 'Red Hat Enterprise Linux kpatch signing key: 4d38fd864ebe18c5f0b72e3852e2014c3a676fc8'
+Jul 27 16:14:28 localhost kernel: Loaded X.509 cert 'Red Hat Enterprise Linux kernel signing key: 20a9713c3a76dc805fca64027c48c34de8fae907'
+Jul 27 16:14:28 localhost kernel: registered taskstats version 1
+Jul 27 16:14:28 localhost kernel: Key type trusted registered
+Jul 27 16:14:28 localhost kernel: Key type encrypted registered
+Jul 27 16:14:28 localhost kernel: IMA: No TPM chip found, activating TPM-bypass!
+Jul 27 16:14:28 localhost kernel: rtc_cmos 00:00: setting system clock to 2016-07-27 16:14:28 UTC (1469636068)
+Jul 27 16:14:28 localhost kernel: Freeing unused kernel memory: 1624k freed
+Jul 27 16:14:28 localhost systemd[1]: systemd 219 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+Jul 27 16:14:28 localhost systemd[1]: Detected virtualization kvm.
+Jul 27 16:14:28 localhost systemd[1]: Detected architecture x86-64.
+Jul 27 16:14:28 localhost systemd[1]: Running in initial RAM disk.
+Jul 27 16:14:28 localhost systemd[1]: No hostname configured.
+Jul 27 16:14:28 localhost systemd[1]: Set hostname to <localhost>.
+Jul 27 16:14:28 localhost systemd[1]: Initializing machine ID from KVM UUID.
+Jul 27 16:14:28 localhost systemd[1]: Cannot add dependency job for unit multipathd.service, ignoring: Unit blk-availability.service failed to load: No such file or directory.
+Jul 27 16:14:28 localhost systemd[1]: Created slice -.slice.
+Jul 27 16:14:28 localhost systemd[1]: Starting -.slice.
+Jul 27 16:14:28 localhost systemd[1]: Created slice System Slice.
+Jul 27 16:14:28 localhost systemd[1]: Starting System Slice.
+Jul 27 16:14:28 localhost systemd[1]: Listening on udev Kernel Socket.
+Jul 27 16:14:28 localhost systemd[1]: Starting udev Kernel Socket.
+Jul 27 16:14:28 localhost systemd[1]: Reached target Local File Systems.
+Jul 27 16:14:28 localhost systemd[1]: Starting Local File Systems.
+Jul 27 16:14:28 localhost systemd[1]: Listening on Journal Socket.
+Jul 27 16:14:28 localhost systemd[1]: Starting Journal Socket.
+Jul 27 16:14:28 localhost systemd[1]: Starting Device-Mapper Multipath Device Controller...
+Jul 27 16:14:28 localhost systemd[1]: Starting Setup Virtual Console...
+Jul 27 16:14:28 localhost kernel: device-mapper: uevent: version 1.0.3
+Jul 27 16:14:28 localhost systemd[1]: Started Load Kernel Modules.
+Jul 27 16:14:28 localhost systemd[1]: Reached target Encrypted Volumes.
+Jul 27 16:14:28 localhost systemd[1]: Starting Encrypted Volumes.
+Jul 27 16:14:28 localhost kernel: device-mapper: ioctl: 4.33.0-ioctl (2015-8-18) initialised: dm-devel@redhat.com
+Jul 27 16:14:28 localhost systemd[1]: Starting Journal Service...
+Jul 27 16:14:28 localhost kernel: device-mapper: multipath: version 1.9.0 loaded
+Jul 27 16:14:28 localhost systemd[1]: Reached target Slices.
+Jul 27 16:14:28 localhost systemd[1]: Starting Slices.
+Jul 27 16:14:28 localhost systemd[1]: Starting Apply Kernel Variables...
+Jul 27 16:14:28 localhost systemd[1]: Listening on udev Control Socket.
+Jul 27 16:14:28 localhost systemd[1]: Starting udev Control Socket.
+Jul 27 16:14:28 localhost systemd-journal[83]: Journal started
+Jul 27 16:14:28 localhost systemd[1]: Reached target Timers.
+Jul 27 16:14:28 localhost systemd[1]: Starting Timers.
+Jul 27 16:14:28 localhost systemd[1]: Reached target Swap.
+Jul 27 16:14:28 localhost systemd[1]: Starting Swap.
+Jul 27 16:14:28 localhost systemd[1]: Starting Create list of required static device nodes for the current kernel...
+Jul 27 16:14:28 localhost systemd[1]: Started dracut ask for additional cmdline parameters.
+Jul 27 16:14:28 localhost systemd[1]: Starting dracut cmdline hook...
+Jul 27 16:14:28 localhost systemd[1]: Started Journal Service.
+Jul 27 16:14:28 localhost systemd[1]: Started Setup Virtual Console.
+Jul 27 16:14:28 localhost systemd[1]: Started Apply Kernel Variables.
+Jul 27 16:14:28 localhost systemd[1]: Started Create list of required static device nodes for the current kernel.
+Jul 27 16:14:28 localhost systemd[1]: PID file /run/multipathd/multipathd.pid not readable (yet?) after start.
+Jul 27 16:14:28 localhost systemd[1]: Started Device-Mapper Multipath Device Controller.
+Jul 27 16:14:28 localhost systemd[1]: Starting Create Static Device Nodes in /dev...
+Jul 27 16:14:28 localhost systemd-tmpfiles[114]: Failed to parse ACL "d:group:adm:r-x,d:group:wheel:r-x": Invalid argument. Ignoring
+Jul 27 16:14:28 localhost systemd-tmpfiles[114]: Failed to parse ACL "group:adm:r-x,group:wheel:r-x": Invalid argument. Ignoring
+Jul 27 16:14:28 localhost systemd-tmpfiles[114]: Failed to parse ACL "d:group:adm:r-x,d:group:wheel:r-x": Invalid argument. Ignoring
+Jul 27 16:14:28 localhost systemd-tmpfiles[114]: Failed to parse ACL "group:adm:r-x,group:wheel:r-x": Invalid argument. Ignoring
+Jul 27 16:14:28 localhost systemd[1]: Started Create Static Device Nodes in /dev.
+Jul 27 16:14:28 localhost kernel: BIOS EDD facility v0.16 2004-Jun-25, 1 devices found
+Jul 27 16:14:28 localhost dracut-cmdline[90]: Loading Red Hat Enterprise Linux 7.2 x86_64 installer...
+Jul 27 16:14:28 localhost dracut-cmdline[90]: Warning: 'method=' is deprecated. Using 'repo=http://download.eng.bos.redhat.com/devel/candidate-trees/RHEL-7.2-updates-20160727.0/compose/Server/x86_64/os/' instead.
+Jul 27 16:14:29 localhost kernel: input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input2
+Jul 27 16:14:29 localhost kernel: tsc: Refined TSC clocksource calibration: 2400.047 MHz
+Jul 27 16:14:29 localhost systemd[1]: Started dracut cmdline hook.
+Jul 27 16:14:29 localhost systemd[1]: Starting dracut pre-udev hook...
+Jul 27 16:14:29 localhost systemd[1]: Starting Open-iSCSI...
+Jul 27 16:14:29 localhost iscsid[346]: iSCSI logger with pid=347 started!
+Jul 27 16:14:29 localhost systemd[1]: Failed to read PID from file /var/run/iscsid.pid: Invalid argument
+Jul 27 16:14:29 localhost iscsid[347]: iSCSI daemon with pid=348 started!
+Jul 27 16:14:29 localhost kernel: Loading iSCSI transport class v2.0-870.
+Jul 27 16:14:29 localhost systemd[1]: Started Open-iSCSI.
+Jul 27 16:14:29 localhost kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Jul 27 16:14:29 localhost kernel: iscsi: registered transport (tcp)
+Jul 27 16:14:29 localhost kernel: FDC 0 is a S82078B
+Jul 27 16:14:29 localhost kernel: No iBFT detected.
+Jul 27 16:14:29 localhost kernel: md: raid0 personality registered for level 0
+Jul 27 16:14:29 localhost kernel: md: raid1 personality registered for level 1
+Jul 27 16:14:29 localhost kernel: async_tx: api initialized (async)
+Jul 27 16:14:29 localhost kernel: xor: measuring software checksum speed
+Jul 27 16:14:29 localhost kernel:    prefetch64-sse: 10700.000 MB/sec
+Jul 27 16:14:29 localhost kernel:    generic_sse: 10028.000 MB/sec
+Jul 27 16:14:29 localhost kernel: xor: using function: prefetch64-sse (10700.000 MB/sec)
+Jul 27 16:14:29 localhost kernel: raid6: sse2x1   gen()  6230 MB/s
+Jul 27 16:14:29 localhost kernel: raid6: sse2x2   gen()  7796 MB/s
+Jul 27 16:14:29 localhost kernel: raid6: sse2x4   gen()  8996 MB/s
+Jul 27 16:14:29 localhost kernel: raid6: using algorithm sse2x4 gen() (8996 MB/s)
+Jul 27 16:14:29 localhost kernel: raid6: using intx1 recovery algorithm
+Jul 27 16:14:29 localhost kernel: md: raid6 personality registered for level 6
+Jul 27 16:14:29 localhost kernel: md: raid5 personality registered for level 5
+Jul 27 16:14:29 localhost kernel: md: raid4 personality registered for level 4
+Jul 27 16:14:29 localhost kernel: md: raid10 personality registered for level 10
+Jul 27 16:14:29 localhost kernel: md: linear personality registered for level -1
+Jul 27 16:14:29 localhost kernel: device-mapper: multipath round-robin: version 1.0.0 loaded
+Jul 27 16:14:29 localhost kernel: RPC: Registered named UNIX socket transport module.
+Jul 27 16:14:29 localhost kernel: RPC: Registered udp transport module.
+Jul 27 16:14:29 localhost kernel: RPC: Registered tcp transport module.
+Jul 27 16:14:29 localhost kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Jul 27 16:14:29 localhost rpc.statd[420]: Version 1.3.0 starting
+Jul 27 16:14:29 localhost rpc.statd[420]: Initializing NSM state
+Jul 27 16:14:29 localhost rpc.statd[420]: Running as root.  chown /var/lib/nfs/statd to choose different user
+Jul 27 16:14:29 localhost systemd[1]: Started dracut pre-udev hook.
+Jul 27 16:14:29 localhost systemd[1]: Starting udev Kernel Device Manager...
+Jul 27 16:14:29 localhost systemd-udevd[447]: starting version 219
+Jul 27 16:14:29 localhost systemd[1]: Started udev Kernel Device Manager.
+Jul 27 16:14:29 localhost systemd[1]: Starting dracut pre-trigger hook...
+Jul 27 16:14:29 localhost systemd[1]: Started dracut pre-trigger hook.
+Jul 27 16:14:29 localhost systemd[1]: Starting udev Coldplug all Devices...
+Jul 27 16:14:29 localhost systemd[1]: Mounting Configuration File System...
+Jul 27 16:14:29 localhost systemd[1]: Mounted Configuration File System.
+Jul 27 16:14:29 localhost systemd[1]: Started udev Coldplug all Devices.
+Jul 27 16:14:29 localhost systemd[1]: Starting Show Plymouth Boot Screen...
+Jul 27 16:14:29 localhost kernel: ACPI: PCI Interrupt Link [LNKC] enabled at IRQ 10
+Jul 27 16:14:29 localhost kernel: virtio-pci 0000:00:03.0: virtio_pci: leaving for legacy driver
+Jul 27 16:14:29 localhost kernel: virtio-pci 0000:00:04.0: virtio_pci: leaving for legacy driver
+Jul 27 16:14:29 localhost kernel: ACPI: PCI Interrupt Link [LNKA] enabled at IRQ 10
+Jul 27 16:14:29 localhost kernel: virtio-pci 0000:00:05.0: virtio_pci: leaving for legacy driver
+Jul 27 16:14:29 localhost kernel: [drm] Initialized drm 1.1.0 20060810
+Jul 27 16:14:29 localhost kernel: libata version 3.00 loaded.
+Jul 27 16:14:29 localhost kernel: ata_piix 0000:00:01.1: version 2.13
+Jul 27 16:14:29 localhost kernel: scsi host0: ata_piix
+Jul 27 16:14:29 localhost kernel: scsi host1: ata_piix
+Jul 27 16:14:29 localhost kernel: ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc000 irq 14
+Jul 27 16:14:29 localhost kernel: ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc008 irq 15
+Jul 27 16:14:29 localhost systemd[1]: Reached target System Initialization.
+Jul 27 16:14:29 localhost systemd[1]: Starting System Initialization.
+Jul 27 16:14:29 localhost systemd[1]: Listening on Open-iSCSI iscsiuio Socket.
+Jul 27 16:14:29 localhost systemd[1]: Starting Open-iSCSI iscsiuio Socket.
+Jul 27 16:14:29 localhost systemd[1]: Reached target Sockets.
+Jul 27 16:14:29 localhost systemd[1]: Starting Sockets.
+Jul 27 16:14:29 localhost systemd[1]: Starting dracut initqueue hook...
+Jul 27 16:14:29 localhost kernel: virtio-pci 0000:00:03.0: irq 24 for MSI/MSI-X
+Jul 27 16:14:29 localhost kernel: virtio-pci 0000:00:03.0: irq 25 for MSI/MSI-X
+Jul 27 16:14:29 localhost kernel: virtio-pci 0000:00:03.0: irq 26 for MSI/MSI-X
+Jul 27 16:14:30 localhost kernel: virtio-pci 0000:00:04.0: irq 27 for MSI/MSI-X
+Jul 27 16:14:30 localhost kernel: virtio-pci 0000:00:04.0: irq 28 for MSI/MSI-X
+Jul 27 16:14:30 localhost kernel: [TTM] Zone  kernel: Available graphics memory: 1024552 kiB
+Jul 27 16:14:30 localhost kernel: [TTM] Initializing pool allocator
+Jul 27 16:14:30 localhost kernel: [TTM] Initializing DMA pool allocator
+Jul 27 16:14:30 localhost kernel: [drm] fb mappable at 0xF0000000
+Jul 27 16:14:30 localhost kernel: [drm] vram aper at 0xF0000000
+Jul 27 16:14:30 localhost kernel: [drm] size 33554432
+Jul 27 16:14:30 localhost kernel: [drm] fb depth is 24
+Jul 27 16:14:30 localhost kernel: [drm]    pitch is 3072
+Jul 27 16:14:30 localhost systemd[1]: Received SIGRTMIN+20 from PID 543 (plymouthd).
+Jul 27 16:14:30 localhost systemd[1]: Started Show Plymouth Boot Screen.
+Jul 27 16:14:30 localhost systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Jul 27 16:14:30 localhost systemd[1]: Reached target Paths.
+Jul 27 16:14:30 localhost systemd[1]: Starting Paths.
+Jul 27 16:14:30 localhost systemd[1]: Started Forward Password Requests to Plymouth Directory Watch.
+Jul 27 16:14:30 localhost systemd[1]: Starting Forward Password Requests to Plymouth Directory Watch.
+Jul 27 16:14:30 localhost kernel: fbcon: cirrusdrmfb (fb0) is primary device
+Jul 27 16:14:30 localhost kernel:  vda: unknown partition table
+Jul 27 16:14:30 localhost kernel: Console: switching to colour frame buffer device 128x48
+Jul 27 16:14:30 localhost kernel: cirrus 0000:00:02.0: fb0: cirrusdrmfb frame buffer device
+Jul 27 16:14:30 localhost kernel: cirrus 0000:00:02.0: registered panic notifier
+Jul 27 16:14:30 localhost systemd[1]: Reached target Basic System.
+Jul 27 16:14:30 localhost systemd[1]: Starting Basic System.
+Jul 27 16:14:30 localhost kernel: [drm] Initialized cirrus 1.0.0 20110418 for 0000:00:02.0 on minor 0
+Jul 27 16:14:30 localhost systemd[1]: Reloading.
+Jul 27 16:14:30 localhost dracut-initqueue[552]: RTNETLINK answers: File exists
+Jul 27 16:14:30 localhost iscsid[347]: can't open InitiatorName configuration file /etc/iscsi/initiatorname.iscsi
+Jul 27 16:14:30 localhost iscsid[347]: Warning: InitiatorName file /etc/iscsi/initiatorname.iscsi does not exist or does not contain a properly formated InitiatorName. If using software iscsi (iscsi_tcp or ib_iser) or partial offload (bnx2i or cxgbi iscsi), you may not be able to log into or d
+Jul 27 16:14:30 localhost iscsid[347]: can't open InitiatorAlias configuration file /etc/iscsi/initiatorname.iscsi
+Jul 27 16:14:30 localhost iscsid[347]: can't open iscsid.safe_logout configuration file /etc/iscsi/iscsid.conf
+Jul 27 16:14:31 localhost dracut-initqueue[552]: dhcp: PREINIT eth0 up
+Jul 27 16:14:31 localhost dhclient[670]: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 4 (xid=0x4c1d9021)
+Jul 27 16:14:34 localhost dhclient[670]: DHCPREQUEST on eth0 to 255.255.255.255 port 67 (xid=0x4c1d9021)
+Jul 27 16:14:34 localhost dhclient[670]: DHCPOFFER from 192.168.122.1
+Jul 27 16:14:34 localhost dhclient[670]: DHCPACK from 192.168.122.1 (xid=0x4c1d9021)
+Jul 27 16:14:34 localhost dracut-initqueue[552]: dhcp: BOND setting eth0
+Jul 27 16:14:36 localhost dhclient[670]: bound to 192.168.122.248 -- renewal in 1413 seconds.
+Jul 27 16:14:36 localhost dracut-initqueue[552]: % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Jul 27 16:14:36 localhost dracut-initqueue[552]: Dload  Upload   Total   Spent    Left  Speed
+Jul 27 16:14:49 localhost dracut-initqueue[552]: [1.0K blob data]
+Jul 27 16:14:49 localhost kernel: loop: module loaded
+Jul 27 16:14:49 localhost systemd[1]: Device dev-disk-by\x2dlabel-Anaconda.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-0
+Jul 27 16:14:49 localhost systemd[1]: Device dev-disk-by\x2duuid-a7066ceb\x2d22ca\x2d4a83\x2da020\x2ddc4a879795b7.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-0
+Jul 27 16:14:49 localhost systemd[1]: Device dev-disk-by\x2dlabel-Anaconda.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-1
+Jul 27 16:14:49 localhost systemd[1]: Device dev-disk-by\x2duuid-a7066ceb\x2d22ca\x2d4a83\x2da020\x2ddc4a879795b7.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-1
+Jul 27 16:14:49 localhost systemd[1]: Started dracut initqueue hook.
+Jul 27 16:14:49 localhost systemd[1]: Starting dracut pre-mount hook...
+Jul 27 16:14:49 localhost systemd[1]: Reached target Remote File Systems (Pre).
+Jul 27 16:14:49 localhost systemd[1]: Starting Remote File Systems (Pre).
+Jul 27 16:14:49 localhost systemd[1]: Reached target Remote File Systems.
+Jul 27 16:14:49 localhost systemd[1]: Starting Remote File Systems.
+Jul 27 16:14:49 localhost systemd[1]: Started dracut pre-mount hook.
+Jul 27 16:14:49 localhost systemd[1]: Reached target Initrd Root File System.
+Jul 27 16:14:49 localhost systemd[1]: Starting Initrd Root File System.
+Jul 27 16:14:49 localhost systemd[1]: Starting Reload Configuration from the Real Root...
+Jul 27 16:14:49 localhost systemd[1]: Reloading.
+Jul 27 16:14:49 localhost systemd[1]: Started Reload Configuration from the Real Root.
+Jul 27 16:14:49 localhost systemd[1]: Reached target Initrd File Systems.
+Jul 27 16:14:49 localhost systemd[1]: Starting Initrd File Systems.
+Jul 27 16:14:49 localhost systemd[1]: Starting dracut mount hook...
+Jul 27 16:14:49 localhost kernel: EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+Jul 27 16:14:49 localhost systemd[1]: Started dracut mount hook.
+Jul 27 16:14:49 localhost systemd[1]: Reached target Initrd Default Target.
+Jul 27 16:14:49 localhost systemd[1]: Starting Initrd Default Target.
+Jul 27 16:14:49 localhost systemd[1]: Starting dracut pre-pivot and cleanup hook...
+Jul 27 16:14:51 localhost rpcbind[416]: cannot open file = /run/rpcbind/rpcbind.xdr for writing
+Jul 27 16:14:51 localhost rpcbind[416]: cannot save any registration
+Jul 27 16:14:51 localhost rpcbind[416]: cannot open file = /run/rpcbind/portmap.xdr for writing
+Jul 27 16:14:51 localhost rpcbind[416]: cannot save any registration
+Jul 27 16:14:51 localhost systemd[1]: Started dracut pre-pivot and cleanup hook.
+Jul 27 16:14:51 localhost systemd[1]: Starting Cleaning Up and Shutting Down Daemons...
+Jul 27 16:14:51 localhost systemd[1]: Stopped target Timers.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Timers.
+Jul 27 16:14:51 localhost systemd[1]: Starting Plymouth switch root service...
+Jul 27 16:14:51 localhost systemd[1]: Stopped Cleaning Up and Shutting Down Daemons.
+Jul 27 16:14:51 localhost systemd[1]: Stopped dracut pre-pivot and cleanup hook.
+Jul 27 16:14:51 localhost systemd[1]: Stopping dracut pre-pivot and cleanup hook...
+Jul 27 16:14:51 localhost systemd[1]: Stopped target Remote File Systems.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Remote File Systems.
+Jul 27 16:14:51 localhost systemd[1]: Stopped target Remote File Systems (Pre).
+Jul 27 16:14:51 localhost systemd[1]: Stopping Remote File Systems (Pre).
+Jul 27 16:14:51 localhost systemd[1]: Stopped target Initrd Default Target.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Initrd Default Target.
+Jul 27 16:14:51 localhost systemd[1]: Stopped dracut mount hook.
+Jul 27 16:14:51 localhost systemd[1]: Stopping dracut mount hook...
+Jul 27 16:14:51 localhost systemd[1]: Stopped dracut pre-mount hook.
+Jul 27 16:14:51 localhost systemd[1]: Stopping dracut pre-mount hook...
+Jul 27 16:14:51 localhost systemd[1]: Stopped dracut initqueue hook.
+Jul 27 16:14:51 localhost systemd[1]: Stopping dracut initqueue hook...
+Jul 27 16:14:51 localhost systemd[1]: Stopping Open-iSCSI...
+Jul 27 16:14:51 localhost systemd[1]: Stopped target Basic System.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Basic System.
+Jul 27 16:14:51 localhost systemd[1]: Stopped target Paths.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Paths.
+Jul 27 16:14:51 localhost systemd[1]: Stopped target Slices.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Slices.
+Jul 27 16:14:51 localhost systemd[1]: Stopped target Sockets.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Sockets.
+Jul 27 16:14:51 localhost systemd[1]: Closed Open-iSCSI iscsiuio Socket.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Open-iSCSI iscsiuio Socket.
+Jul 27 16:14:51 localhost systemd[1]: Stopped target System Initialization.
+Jul 27 16:14:51 localhost systemd[1]: Stopping System Initialization.
+Jul 27 16:14:51 localhost systemd[1]: Stopped target Local File Systems.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Local File Systems.
+Jul 27 16:14:51 localhost systemd[1]: Stopped target Swap.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Swap.
+Jul 27 16:14:51 localhost systemd[1]: Stopped target Encrypted Volumes.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Encrypted Volumes.
+Jul 27 16:14:51 localhost systemd[1]: Stopped Apply Kernel Variables.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Apply Kernel Variables...
+Jul 27 16:14:51 localhost systemd[1]: Stopped udev Coldplug all Devices.
+Jul 27 16:14:51 localhost systemd[1]: Stopping udev Coldplug all Devices...
+Jul 27 16:14:51 localhost systemd[1]: Stopped dracut pre-trigger hook.
+Jul 27 16:14:51 localhost systemd[1]: Stopping dracut pre-trigger hook...
+Jul 27 16:14:51 localhost systemd[1]: Stopping udev Kernel Device Manager...
+Jul 27 16:14:51 localhost systemd[1]: Stopped udev Kernel Device Manager.
+Jul 27 16:14:51 localhost iscsid[347]: iscsid shutting down.
+Jul 27 16:14:51 localhost systemd[1]: Stopped Create Static Device Nodes in /dev.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Create Static Device Nodes in /dev...
+Jul 27 16:14:51 localhost systemd[1]: Stopped Create list of required static device nodes for the current kernel.
+Jul 27 16:14:51 localhost systemd[1]: Stopping Create list of required static device nodes for the current kernel...
+Jul 27 16:14:51 localhost systemd[1]: Stopped dracut pre-udev hook.
+Jul 27 16:14:51 localhost systemd[1]: Stopping dracut pre-udev hook...
+Jul 27 16:14:51 localhost systemd[1]: Closed udev Control Socket.
+Jul 27 16:14:51 localhost systemd[1]: Stopping udev Control Socket.
+Jul 27 16:14:51 localhost systemd[1]: Closed udev Kernel Socket.
+Jul 27 16:14:51 localhost systemd[1]: Stopping udev Kernel Socket.
+Jul 27 16:14:51 localhost systemd[1]: Starting Cleanup udevd DB...
+Jul 27 16:14:51 localhost systemd[1]: Stopped Open-iSCSI.
+Jul 27 16:14:51 localhost systemd[1]: Started Cleanup udevd DB.
+Jul 27 16:14:51 localhost systemd[1]: Reached target Switch Root.
+Jul 27 16:14:51 localhost systemd[1]: Starting Switch Root.
+Jul 27 16:14:51 localhost systemd[1]: Stopped dracut cmdline hook.
+Jul 27 16:14:51 localhost systemd[1]: Stopping dracut cmdline hook...
+Jul 27 16:14:51 localhost multipathd[104]: path checkers start up
+Jul 27 16:14:51 localhost multipathd[104]: --------shut down-------
+Jul 27 16:14:51 localhost systemd[1]: Stopping Device-Mapper Multipath Device Controller...
+Jul 27 16:14:51 localhost systemd[1]: Stopped Device-Mapper Multipath Device Controller.
+Jul 27 16:14:52 localhost systemd[1]: Started Plymouth switch root service.
+Jul 27 16:14:52 localhost systemd[1]: Starting Switch Root...
+Jul 27 16:14:52 localhost systemd[1]: Switching root.
+Jul 27 16:14:52 localhost systemd-journal[83]: Journal stopped
+Jul 27 16:14:53 localhost systemd-journal[1122]: Runtime journal is using 8.0M (max allowed 100.0M, trying to leave 150.0M free of 965.3M available → current limit 100.0M).
+Jul 27 16:14:53 localhost systemd-journal[1122]: Runtime journal is using 8.0M (max allowed 100.0M, trying to leave 150.0M free of 965.3M available → current limit 100.0M).
+Jul 27 16:14:53 localhost systemd-journald[83]: Received SIGTERM from PID 1 (systemd).
+Jul 27 16:14:53 localhost kernel: SELinux: 2048 avtab hash slots, 112403 rules.
+Jul 27 16:14:53 localhost kernel: SELinux: 2048 avtab hash slots, 112403 rules.
+Jul 27 16:14:53 localhost kernel: SELinux:  8 users, 105 roles, 4954 types, 303 bools, 1 sens, 1024 cats
+Jul 27 16:14:53 localhost kernel: SELinux:  83 classes, 112403 rules
+Jul 27 16:14:53 localhost kernel: SELinux:  Completing initialization.
+Jul 27 16:14:53 localhost kernel: SELinux:  Setting up existing superblocks.
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev sysfs, type sysfs), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev rootfs, type rootfs), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev bdev, type bdev), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev proc, type proc), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev devtmpfs, type devtmpfs), uses transition SIDs
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev sockfs, type sockfs), uses task SIDs
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev debugfs, type debugfs), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev pipefs, type pipefs), uses task SIDs
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev anon_inodefs, type anon_inodefs), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev aio, type aio), not configured for labeling
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev devpts, type devpts), uses transition SIDs
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev hugetlbfs, type hugetlbfs), uses transition SIDs
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev mqueue, type mqueue), uses transition SIDs
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev selinuxfs, type selinuxfs), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev securityfs, type securityfs), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev sysfs, type sysfs), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev pstore, type pstore), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev cgroup, type cgroup), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev rpc_pipefs, type rpc_pipefs), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev configfs, type configfs), uses genfs_contexts
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev drm, type drm), not configured for labeling
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev loop0, type squashfs), uses xattr
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev dm-0, type ext4), uses xattr
+Jul 27 16:14:53 localhost kernel: type=1403 audit(1469636092.625:2): policy loaded auid=4294967295 ses=4294967295
+Jul 27 16:14:53 localhost systemd[1]: Successfully loaded SELinux policy in 291.877ms.
+Jul 27 16:14:53 localhost systemd[1]: Relabelled /dev and /run in 23.482ms.
+Jul 27 16:14:53 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit rhel-autorelabel.service is masked.
+Jul 27 16:14:53 localhost systemd[1]: Stopped Switch Root.
+Jul 27 16:14:53 localhost systemd[1]: Cannot find unit for notify message of PID 83.
+Jul 27 16:14:53 localhost systemd[1]: systemd-journald.service has no holdoff time, scheduling restart.
+Jul 27 16:14:53 localhost systemd[1]: Started Load Kernel Modules.
+Jul 27 16:14:53 localhost systemd[1]: Stopped target Switch Root.
+Jul 27 16:14:53 localhost systemd[1]: Stopping Switch Root.
+Jul 27 16:14:53 localhost systemd[1]: Stopped target Initrd File Systems.
+Jul 27 16:14:53 localhost systemd[1]: Stopping Initrd File Systems.
+Jul 27 16:14:53 localhost systemd[1]: Created slice system-anaconda\x2dtmux.slice.
+Jul 27 16:14:53 localhost systemd[1]: Starting system-anaconda\x2dtmux.slice.
+Jul 27 16:14:53 localhost systemd[1]: Mounting Huge Pages File System...
+Jul 27 16:14:53 localhost systemd[1]: Starting Device-Mapper Multipath Device Controller...
+Jul 27 16:14:53 localhost systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+Jul 27 16:14:53 localhost systemd[1]: Starting /dev/initctl Compatibility Named Pipe.
+Jul 27 16:14:53 localhost systemd[1]: Listening on Delayed Shutdown Socket.
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev hugetlbfs, type hugetlbfs), uses transition SIDs
+Jul 27 16:14:53 localhost systemd[1]: Starting Delayed Shutdown Socket.
+Jul 27 16:14:53 localhost systemd[1]: Listening on LVM2 metadata daemon socket.
+Jul 27 16:14:53 localhost systemd[1]: Starting LVM2 metadata daemon socket.
+Jul 27 16:14:53 localhost systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Jul 27 16:14:53 localhost systemd[1]: Mounting Debug File System...
+Jul 27 16:14:53 localhost systemd[1]: Reached target Paths.
+Jul 27 16:14:53 localhost systemd[1]: Starting Paths.
+Jul 27 16:14:53 localhost systemd[1]: Mounting POSIX Message Queue File System...
+Jul 27 16:14:53 localhost systemd[1]: Starting Create list of required static device nodes for the current kernel...
+Jul 27 16:14:53 localhost systemd[1]: Mounting Temporary Directory...
+Jul 27 16:14:53 localhost systemd[1]: Mounted FUSE Control File System.
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+Jul 27 16:14:53 localhost systemd[1]: Stopped target Initrd Root File System.
+Jul 27 16:14:53 localhost systemd[1]: Stopping Initrd Root File System.
+Jul 27 16:14:53 localhost systemd[1]: Starting Apply Kernel Variables...
+Jul 27 16:14:53 localhost kernel: SELinux: initialized (dev autofs, type autofs), uses genfs_contexts
+Jul 27 16:14:53 localhost systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+Jul 27 16:14:53 localhost systemd[1]: Starting Arbitrary Executable File Formats File System Automount Point.
+Jul 27 16:14:53 localhost systemd[1]: Started Set Up Additional Binary Formats.
+Jul 27 16:14:53 localhost systemd[1]: Reached target Swap.
+Jul 27 16:14:53 localhost systemd[1]: Starting Swap.
+Jul 27 16:14:53 localhost systemd[1]: Listening on LVM2 poll daemon socket.
+Jul 27 16:14:53 localhost systemd[1]: Starting LVM2 poll daemon socket.
+Jul 27 16:14:53 localhost systemd[1]: Starting Remount Root and Kernel File Systems...
+Jul 27 16:14:53 localhost systemd[1]: Starting Journal Service...
+Jul 27 16:14:53 localhost systemd[1]: Listening on udev Kernel Socket.
+Jul 27 16:14:53 localhost systemd[1]: Starting udev Kernel Socket.
+Jul 27 16:14:53 localhost systemd[1]: Reached target Timers.
+Jul 27 16:14:53 localhost systemd[1]: Starting Timers.
+Jul 27 16:14:53 localhost systemd[1]: Listening on udev Control Socket.
+Jul 27 16:14:53 localhost systemd[1]: Starting udev Control Socket.
+Jul 27 16:14:53 localhost systemd[1]: Created slice User and Session Slice.
+Jul 27 16:14:53 localhost systemd[1]: Starting User and Session Slice.
+Jul 27 16:14:53 localhost systemd[1]: Reached target Slices.
+Jul 27 16:14:53 localhost systemd[1]: Starting Slices.
+Jul 27 16:14:53 localhost systemd[1]: Mounted POSIX Message Queue File System.
+Jul 27 16:14:53 localhost systemd[1]: Mounted Huge Pages File System.
+Jul 27 16:14:53 localhost systemd[1]: Mounted Debug File System.
+Jul 27 16:14:53 localhost systemd[1]: Mounted Temporary Directory.
+Jul 27 16:14:53 localhost systemd-journal[1122]: Journal started
+Jul 27 16:14:53 localhost systemd[1]: Started Create list of required static device nodes for the current kernel.
+Jul 27 16:14:53 localhost systemd[1]: Started Apply Kernel Variables.
+Jul 27 16:14:52 localhost systemd[1]: systemd 219 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+Jul 27 16:14:52 localhost systemd[1]: Detected virtualization kvm.
+Jul 27 16:14:52 localhost systemd[1]: Detected architecture x86-64.
+Jul 27 16:14:52 localhost systemd[1]: Initializing machine ID from KVM UUID.
+Jul 27 16:14:52 localhost systemd[1088]: /usr/lib/systemd/system-generators/lvm2-activation-generator failed with error code 127.
+Jul 27 16:14:52 localhost systemd[1]: Configuration file /usr/lib/systemd/system/auditd.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Jul 27 16:14:52 localhost systemd[1]: Configuration file /usr/lib/systemd/system/ebtables.service is marked executable. Please remove executable permission bits. Proceeding anyway.
+Jul 27 16:14:53 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit rhel-autorelabel-mark.service is masked.
+Jul 27 16:14:53 localhost systemd[1]: Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit systemd-tmpfiles-clean.timer is masked.
+Jul 27 16:14:53 localhost systemd[1]: Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit rhel-loadmodules.service is masked.
+Jul 27 16:14:53 localhost systemd[1]: Cannot add dependency job for unit rhel-configure.service, ignoring: Unit rhel-configure.service is masked.
+Jul 27 16:14:53 localhost systemd[1]: Started Remount Root and Kernel File Systems.
+Jul 27 16:14:53 localhost systemd[1]: Started Journal Service.
+Jul 27 16:14:53 localhost systemd[1]: PID file /run/multipathd/multipathd.pid not readable (yet?) after start.
+Jul 27 16:14:53 localhost systemd[1]: Started Device-Mapper Multipath Device Controller.
+Jul 27 16:14:53 localhost systemd[1]: Started First Boot Wizard.
+Jul 27 16:14:53 localhost systemd[1]: Starting Load/Save Random Seed...
+Jul 27 16:14:53 localhost systemd[1]: Starting Flush Journal to Persistent Storage...
+Jul 27 16:14:53 localhost systemd[1]: Starting Configure read-only root support...
+Jul 27 16:14:53 localhost systemd[1]: Starting Rebuild Hardware Database...
+Jul 27 16:14:53 localhost systemd[1]: Starting Create Static Device Nodes in /dev...
+Jul 27 16:14:53 localhost systemd[1]: Started Load/Save Random Seed.
+Jul 27 16:14:53 localhost systemd-journal[1122]: Runtime journal is using 8.0M (max allowed 100.0M, trying to leave 150.0M free of 965.3M available → current limit 100.0M).
+Jul 27 16:14:53 localhost systemd[1]: Started Flush Journal to Persistent Storage.
+Jul 27 16:14:53 localhost systemd[1]: Started Configure read-only root support.
+Jul 27 16:14:53 localhost systemd[1]: Started Create Static Device Nodes in /dev.
+Jul 27 16:14:53 localhost systemd[1]: Starting udev Kernel Device Manager...
+Jul 27 16:14:53 localhost systemd[1]: Reached target Local File Systems (Pre).
+Jul 27 16:14:53 localhost systemd[1]: Starting Local File Systems (Pre).
+Jul 27 16:14:53 localhost systemd-udevd[1148]: starting version 219
+Jul 27 16:14:53 localhost systemd[1]: Started udev Kernel Device Manager.
+Jul 27 16:14:54 localhost systemd[1]: Started Rebuild Hardware Database.
+Jul 27 16:14:54 localhost systemd[1]: Starting udev Coldplug all Devices...
+Jul 27 16:14:54 localhost kernel: piix4_smbus 0000:00:01.3: SMBus Host Controller at 0xb100, revision 0
+Jul 27 16:14:54 localhost systemd[1]: Started udev Coldplug all Devices.
+Jul 27 16:14:54 localhost systemd[1]: Starting udev Wait for Complete Device Initialization...
+Jul 27 16:14:54 localhost kernel: input: PC Speaker as /devices/platform/pcspkr/input/input3
+Jul 27 16:14:54 localhost systemd[1]: Device dev-disk-by\x2dlabel-Anaconda.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-1
+Jul 27 16:14:54 localhost systemd[1]: Device dev-disk-by\x2duuid-a7066ceb\x2d22ca\x2d4a83\x2da020\x2ddc4a879795b7.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-1
+Jul 27 16:14:54 localhost systemd[1]: Device dev-disk-by\x2dlabel-Anaconda.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-0
+Jul 27 16:14:54 localhost systemd[1]: Device dev-disk-by\x2duuid-a7066ceb\x2d22ca\x2d4a83\x2da020\x2ddc4a879795b7.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-0
+Jul 27 16:14:54 localhost systemd[1]: Started udev Wait for Complete Device Initialization.
+Jul 27 16:14:54 localhost systemd[1]: Starting Activation of DM RAID sets...
+Jul 27 16:14:54 localhost systemd[1]: Started Activation of DM RAID sets.
+Jul 27 16:14:54 localhost systemd[1]: Reached target Local File Systems.
+Jul 27 16:14:54 localhost systemd[1]: Starting Local File Systems.
+Jul 27 16:14:54 localhost systemd[1]: Starting Rebuild Journal Catalog...
+Jul 27 16:14:54 localhost systemd[1]: Starting Import network configuration from initramfs...
+Jul 27 16:14:54 localhost systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+Jul 27 16:14:54 localhost systemd[1]: Started Commit a transient machine-id on disk.
+Jul 27 16:14:54 localhost systemd[1]: Reached target Encrypted Volumes.
+Jul 27 16:14:54 localhost systemd[1]: Starting Encrypted Volumes.
+Jul 27 16:14:55 localhost systemd[1]: Started Rebuild Journal Catalog.
+Jul 27 16:14:55 localhost systemd[1]: Starting Update is Completed...
+Jul 27 16:14:55 localhost systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+Jul 27 16:14:55 localhost rhel-import-state[1188]: './var/lib/dhclient/dhclient-d28a6d05-38b5-42c4-b325-81fe1d945793-eth0.lease' -> '/var/lib/dhclient/dhclient-d28a6d05-38b5-42c4-b325-81fe1d945793-eth0.lease'
+Jul 27 16:14:55 localhost rhel-import-state[1188]: './etc/resolv.conf' -> '/etc/resolv.conf'
+Jul 27 16:14:55 localhost rhel-import-state[1188]: './etc/sysconfig/network-scripts/ifcfg-eth0' -> '/etc/sysconfig/network-scripts/ifcfg-eth0'
+Jul 27 16:14:55 localhost systemd[1]: Started Update is Completed.
+Jul 27 16:14:55 localhost systemd[1]: Started Import network configuration from initramfs.
+Jul 27 16:14:55 localhost systemd[1]: Starting Create Volatile Files and Directories...
+Jul 27 16:14:55 localhost systemd[1]: Started Create Volatile Files and Directories.
+Jul 27 16:14:55 localhost systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Jul 27 16:14:55 localhost systemd[1]: Started Update UTMP about System Boot/Shutdown.
+Jul 27 16:14:55 localhost systemd[1]: Reached target System Initialization.
+Jul 27 16:14:55 localhost systemd[1]: Starting System Initialization.
+Jul 27 16:14:55 localhost systemd[1]: Listening on Open-iSCSI iscsid Socket.
+Jul 27 16:14:55 localhost systemd[1]: Starting Open-iSCSI iscsid Socket.
+Jul 27 16:14:55 localhost systemd[1]: Listening on Open-iSCSI iscsiuio Socket.
+Jul 27 16:14:55 localhost systemd[1]: Starting Open-iSCSI iscsiuio Socket.
+Jul 27 16:14:55 localhost systemd[1]: Listening on D-Bus System Message Bus Socket.
+Jul 27 16:14:55 localhost systemd[1]: Starting D-Bus System Message Bus Socket.
+Jul 27 16:14:55 localhost systemd[1]: Reached target Sockets.
+Jul 27 16:14:55 localhost systemd[1]: Starting Sockets.
+Jul 27 16:14:55 localhost systemd[1]: Reached target Basic System.
+Jul 27 16:14:55 localhost systemd[1]: Starting Basic System.
+Jul 27 16:14:55 localhost systemd[1]: Starting System Logging Service...
+Jul 27 16:14:55 localhost systemd[1]: Starting firewalld - dynamic firewall daemon...
+Jul 27 16:14:55 localhost systemd[1]: Starting Login Service...
+Jul 27 16:14:55 localhost systemd[1]: Starting Wait for Plymouth Boot Screen to Quit...
+Jul 27 16:14:55 localhost systemd[1]: Starting Terminate Plymouth Boot Screen...
+Jul 27 16:14:55 localhost systemd[1]: Started Anaconda NetworkManager configuration.
+Jul 27 16:14:55 localhost systemd[1]: Starting Anaconda NetworkManager configuration...
+Jul 27 16:14:55 localhost systemd[1]: Started anaconda performance monitor.
+Jul 27 16:14:55 localhost systemd[1]: Starting Dump dmesg to /var/log/dmesg...
+Jul 27 16:14:55 localhost systemd[1]: Starting Service enabling compressing RAM with zRam...
+Jul 27 16:14:55 localhost zramswapon[1213]: + MAX_RAM_ON=2097152
+Jul 27 16:14:55 localhost systemd[1]: Started System Logging Service.
+Jul 27 16:14:55 localhost zramswapon[1213]: ++ grep MemTotal /proc/meminfo
+Jul 27 16:14:55 localhost zramswapon[1213]: ++ grep -E --only-matching '[[:digit:]]+'
+Jul 27 16:14:55 localhost zramswapon[1213]: + mem_total_kb=2049104
+Jul 27 16:14:55 localhost zramswapon[1213]: + mem_total=2098282496
+Jul 27 16:14:55 localhost zramswapon[1213]: + grep -E 'inst\.zram=(on|1)' /proc/cmdline
+Jul 27 16:14:55 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit rhel-autorelabel-mark.service is masked.
+Jul 27 16:14:55 localhost systemd[1]: Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit systemd-tmpfiles-clean.timer is masked.
+Jul 27 16:14:55 localhost systemd[1]: Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit rhel-loadmodules.service is masked.
+Jul 27 16:14:55 localhost systemd[1]: Cannot add dependency job for unit rhel-configure.service, ignoring: Unit rhel-configure.service is masked.
+Jul 27 16:14:55 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit rhel-autorelabel.service is masked.
+Jul 27 16:14:55 localhost zramswapon[1213]: + force=1
+Jul 27 16:14:55 localhost zramswapon[1213]: + '[' '(' 2049104 -gt 2097152 ')' -a '(' 1 '!=' 0 ')' ']'
+Jul 27 16:14:55 localhost zramswapon[1213]: ++ getconf _NPROCESSORS_ONLN
+Jul 27 16:14:55 localhost zramswapon[1213]: + num_cpus=1
+Jul 27 16:14:55 localhost zramswapon[1213]: + decr_num_cpus=0
+Jul 27 16:14:55 localhost zramswapon[1213]: + modprobe zram num_devices=1
+Jul 27 16:14:55 localhost kernel: type=1400 audit(1469636095.506:3): avc:  denied  { write } for  pid=1207 comm="firewalld" name="python2.7" dev="dm-0" ino=16496 scontext=system_u:system_r:firewalld_t:s0 tcontext=system_u:object_r:lib_t:s0 tclass=dir
+Jul 27 16:14:55 localhost systemd[1]: Started Dump dmesg to /var/log/dmesg.
+Jul 27 16:14:55 localhost kernel: type=1400 audit(1469636095.515:4): avc:  denied  { remove_name } for  pid=1207 comm="firewalld" name="site.pyc" dev="dm-0" ino=16565 scontext=system_u:system_r:firewalld_t:s0 tcontext=system_u:object_r:lib_t:s0 tclass=dir
+Jul 27 16:14:55 localhost kernel: type=1400 audit(1469636095.515:5): avc:  denied  { unlink } for  pid=1207 comm="firewalld" name="site.pyc" dev="dm-0" ino=16565 scontext=system_u:system_r:firewalld_t:s0 tcontext=system_u:object_r:lib_t:s0 tclass=lnk_file
+Jul 27 16:14:55 localhost kernel: type=1400 audit(1469636095.515:6): avc:  denied  { add_name } for  pid=1207 comm="firewalld" name="site.pyc" scontext=system_u:system_r:firewalld_t:s0 tcontext=system_u:object_r:lib_t:s0 tclass=dir
+Jul 27 16:14:55 localhost kernel: type=1400 audit(1469636095.515:7): avc:  denied  { create } for  pid=1207 comm="firewalld" name="site.pyc" scontext=system_u:system_r:firewalld_t:s0 tcontext=system_u:object_r:lib_t:s0 tclass=file
+Jul 27 16:14:55 localhost kernel: type=1400 audit(1469636095.515:8): avc:  denied  { write } for  pid=1207 comm="firewalld" path="/usr/lib64/python2.7/site.pyc" dev="dm-0" ino=16565 scontext=system_u:system_r:firewalld_t:s0 tcontext=system_u:object_r:lib_t:s0 tclass=file
+Jul 27 16:14:55 localhost systemd[1]: Started D-Bus System Message Bus.
+Jul 27 16:14:55 localhost kernel: zram: module is from the staging directory, the quality is unknown, you have been warned.
+Jul 27 16:14:55 localhost kernel: zram: Created 1 device(s) ...
+Jul 27 16:14:55 localhost zramswapon[1213]: ++ seq 0 0
+Jul 27 16:14:55 localhost zramswapon[1213]: + for i in '$(seq 0 $decr_num_cpus)'
+Jul 27 16:14:55 localhost zramswapon[1213]: + echo 2098282496
+Jul 27 16:14:55 localhost kernel: zram: Initialization done!
+Jul 27 16:14:55 localhost zramswapon[1213]: ++ seq 0 0
+Jul 27 16:14:55 localhost zramswapon[1213]: + for i in '$(seq 0 $decr_num_cpus)'
+Jul 27 16:14:55 localhost zramswapon[1213]: + mkswap /dev/zram0
+Jul 27 16:14:55 localhost zramswapon[1213]: Setting up swapspace version 1, size = 2049100 KiB
+Jul 27 16:14:55 localhost zramswapon[1213]: no label, UUID=8c9d9850-682e-4517-a5ec-3cb421fc9fac
+Jul 27 16:14:55 localhost zramswapon[1213]: ++ seq 0 0
+Jul 27 16:14:55 localhost zramswapon[1213]: + for i in '$(seq 0 $decr_num_cpus)'
+Jul 27 16:14:55 localhost zramswapon[1213]: + swapon -p 100 /dev/zram0
+Jul 27 16:14:55 localhost systemd[1]: Starting D-Bus System Message Bus...
+Jul 27 16:14:55 localhost systemd[1]: Received SIGRTMIN+21 from PID 543 (plymouthd).
+Jul 27 16:14:55 localhost kernel: type=1400 audit(1469636095.682:9): avc:  denied  { create } for  pid=1207 comm="firewalld" name="warnings.pyc" scontext=system_u:system_r:firewalld_t:s0 tcontext=system_u:object_r:lib_t:s0 tclass=file
+Jul 27 16:14:55 localhost kernel: Adding 2049100k swap on /dev/zram0.  Priority:100 extents:1 across:2049100k SSFS
+Jul 27 16:14:55 localhost kernel: type=1400 audit(1469636095.685:10): avc:  denied  { write } for  pid=1207 comm="firewalld" path="/usr/lib64/python2.7/warnings.pyc" dev="dm-0" ino=16754 scontext=system_u:system_r:firewalld_t:s0 tcontext=system_u:object_r:lib_t:s0 tclass=file
+Jul 27 16:14:55 localhost systemd[1]: Started Wait for Plymouth Boot Screen to Quit.
+Jul 27 16:14:55 localhost zramswapon[1213]: + '[' 2049104 -le 1048576 ']'
+Jul 27 16:14:55 localhost systemd[1]: Started Terminate Plymouth Boot Screen.
+Jul 27 16:14:55 localhost systemd[1]: Started Service enabling compressing RAM with zRam.
+Jul 27 16:14:55 localhost systemd-logind[1208]: New seat seat0.
+Jul 27 16:14:55 localhost systemd-logind[1208]: Watching system buttons on /dev/input/event0 (Power Button)
+Jul 27 16:14:55 localhost systemd[1]: Started Login Service.
+Jul 27 16:14:55 localhost kernel: type=1400 audit(1469636095.742:11): avc:  denied  { write } for  pid=1207 comm="firewalld" name="python2.7" dev="dm-0" ino=16496 scontext=system_u:system_r:firewalld_t:s0 tcontext=system_u:object_r:lib_t:s0 tclass=dir
+Jul 27 16:14:56 localhost kernel: Ebtables v2.0 registered
+Jul 27 16:14:56 localhost kernel: Bridge firewalling registered
+Jul 27 16:14:56 localhost systemd[1]: Started firewalld - dynamic firewall daemon.
+Jul 27 16:14:56 localhost systemd[1]: Starting Network Manager...
+Jul 27 16:14:57 localhost systemd[1]: Started Network Manager.
+Jul 27 16:14:57 localhost systemd[1]: Reached target Network.
+Jul 27 16:14:57 localhost systemd[1]: Starting Network.
+Jul 27 16:14:57 localhost systemd[1]: Starting Logout off all iSCSI sessions on shutdown...
+Jul 27 16:14:57 localhost systemd[1]: Started OpenSSH server daemon.
+Jul 27 16:14:57 localhost systemd[1]: Started the anaconda installation program.
+Jul 27 16:14:57 localhost systemd[1]: Started Login and scanning of iSCSI devices.
+Jul 27 16:14:57 localhost systemd[1]: Reached target Anaconda System Services.
+Jul 27 16:14:57 localhost systemd[1]: Starting Anaconda System Services.
+Jul 27 16:14:57 localhost systemd[1]: Starting Anaconda...
+Jul 27 16:14:57 localhost systemd[1]: Started Logout off all iSCSI sessions on shutdown.
+Jul 27 16:14:57 localhost systemd[1]: Starting Availability of block devices...
+Jul 27 16:14:57 localhost systemd[1]: Reached target Remote File Systems (Pre).
+Jul 27 16:14:57 localhost systemd[1]: Starting Remote File Systems (Pre).
+Jul 27 16:14:57 localhost systemd[1]: Started Availability of block devices.
+Jul 27 16:14:57 localhost systemd[1]: Started Anaconda.
+Jul 27 16:14:57 localhost systemd[1]: Started Anaconda Text Console.
+Jul 27 16:14:57 localhost systemd[1]: Starting Anaconda Text Console...
+Jul 27 16:14:57 localhost systemd[1]: Started Restrict Anaconda Text Console.
+Jul 27 16:14:57 localhost systemd[1]: Startup finished in 4.840s (kernel) + 23.819s (initrd) + 5.274s (userspace) = 33.934s.
+Jul 27 16:14:57 localhost dbus-daemon[1228]: dbus[1228]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service'
+Jul 27 16:14:57 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit rhel-autorelabel-mark.service is masked.
+Jul 27 16:14:57 localhost systemd[1]: Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit systemd-tmpfiles-clean.timer is masked.
+Jul 27 16:14:57 localhost systemd[1]: Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit rhel-loadmodules.service is masked.
+Jul 27 16:14:57 localhost systemd[1]: Cannot add dependency job for unit rhel-configure.service, ignoring: Unit rhel-configure.service is masked.
+Jul 27 16:14:57 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit rhel-autorelabel.service is masked.
+Jul 27 16:14:57 localhost systemd[1]: Starting Authorization Manager...
+Jul 27 16:14:57 localhost dbus-daemon[1228]: dbus[1228]: [system] Activating via systemd: service name='fi.w1.wpa_supplicant1' unit='wpa_supplicant.service'
+Jul 27 16:14:57 localhost systemd[1]: Configuration file /usr/lib/systemd/system/wpa_supplicant.service is marked executable. Please remove executable permission bits. Proceeding anyway.
+Jul 27 16:14:57 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit rhel-autorelabel-mark.service is masked.
+Jul 27 16:14:57 localhost systemd[1]: Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit systemd-tmpfiles-clean.timer is masked.
+Jul 27 16:14:57 localhost systemd[1]: Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit rhel-loadmodules.service is masked.
+Jul 27 16:14:57 localhost systemd[1]: Cannot add dependency job for unit rhel-configure.service, ignoring: Unit rhel-configure.service is masked.
+Jul 27 16:14:57 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit rhel-autorelabel.service is masked.
+Jul 27 16:14:57 localhost systemd[1]: Starting WPA Supplicant daemon...
+Jul 27 16:14:58 localhost dbus-daemon[1228]: dbus[1228]: [system] Successfully activated service 'fi.w1.wpa_supplicant1'
+Jul 27 16:14:58 localhost systemd[1]: Started WPA Supplicant daemon.
+Jul 27 16:14:58 localhost dbus-daemon[1228]: dbus[1228]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Jul 27 16:14:58 localhost systemd[1]: Started Authorization Manager.
+Jul 27 16:14:58 localhost dbus-daemon[1228]: dbus[1228]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+Jul 27 16:14:58 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit rhel-autorelabel-mark.service is masked.
+Jul 27 16:14:58 localhost systemd[1]: Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit systemd-tmpfiles-clean.timer is masked.
+Jul 27 16:14:58 localhost systemd[1]: Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit rhel-loadmodules.service is masked.
+Jul 27 16:14:58 localhost systemd[1]: Cannot add dependency job for unit rhel-configure.service, ignoring: Unit rhel-configure.service is masked.
+Jul 27 16:14:58 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit rhel-autorelabel.service is masked.
+Jul 27 16:14:58 localhost systemd[1]: Starting Network Manager Script Dispatcher Service...
+Jul 27 16:14:58 localhost dbus-daemon[1228]: dbus[1228]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jul 27 16:14:58 localhost systemd[1]: Started Network Manager Script Dispatcher Service.
+Jul 27 16:14:58 localhost systemd[1]: Unit iscsi.service cannot be reloaded because it is inactive.
+Jul 27 16:15:01 localhost systemd[1]: Device dev-disk-by\x2dlabel-Anaconda.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-0
+Jul 27 16:15:01 localhost systemd[1]: Device dev-disk-by\x2duuid-a7066ceb\x2d22ca\x2d4a83\x2da020\x2ddc4a879795b7.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-0
+Jul 27 16:15:01 localhost systemd[1]: Device dev-disk-by\x2dlabel-Anaconda.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-1
+Jul 27 16:15:01 localhost systemd[1]: Device dev-disk-by\x2duuid-a7066ceb\x2d22ca\x2d4a83\x2da020\x2ddc4a879795b7.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-1
+Jul 27 16:15:01 localhost kernel: audit_printk_skb: 9 callbacks suppressed
+Jul 27 16:15:01 localhost kernel: type=1400 audit(1469636101.956:15): avc:  denied  { read write } for  pid=1362 comm="loadkeys" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:loadkeys_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file
+Jul 27 16:15:01 localhost kernel: type=1400 audit(1469636101.958:16): avc:  denied  { open } for  pid=1362 comm="loadkeys" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:loadkeys_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file
+Jul 27 16:15:01 localhost kernel: type=1400 audit(1469636101.958:17): avc:  denied  { ioctl } for  pid=1362 comm="loadkeys" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:loadkeys_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file
+Jul 27 16:15:02 localhost dbus-daemon[1228]: dbus[1228]: [system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service'
+Jul 27 16:15:02 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit rhel-autorelabel-mark.service is masked.
+Jul 27 16:15:02 localhost systemd[1]: Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit systemd-tmpfiles-clean.timer is masked.
+Jul 27 16:15:02 localhost systemd[1]: Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit rhel-loadmodules.service is masked.
+Jul 27 16:15:02 localhost systemd[1]: Cannot add dependency job for unit rhel-configure.service, ignoring: Unit rhel-configure.service is masked.
+Jul 27 16:15:02 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit rhel-autorelabel.service is masked.
+Jul 27 16:15:02 localhost systemd[1]: Starting Locale Service...
+Jul 27 16:15:02 localhost kernel: SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+Jul 27 16:15:02 localhost dbus-daemon[1228]: dbus[1228]: [system] Successfully activated service 'org.freedesktop.locale1'
+Jul 27 16:15:02 localhost systemd[1]: Started Locale Service.
+Jul 27 16:15:02 localhost systemd-localed[1366]: Changed virtual console keymap to 'us' toggle ''
+Jul 27 16:15:02 localhost systemd-localed[1366]: Changed X11 keyboard layout to 'us' model 'pc105+inet' variant '' options 'terminate:ctrl_alt_bksp'
+Jul 27 16:15:02 localhost kernel: type=1107 audit(1469636102.142:18): pid=1228 uid=81 auid=4294967295 ses=4294967295 subj=system_u:system_r:system_dbusd_t:s0-s0:c0.c1023 msg='avc:  denied  { send_msg } for msgtype=method_return dest=:1.8 spid=1366 tpid=1277 scontext=system_u:system_r:systemd_localed_t:s0 tcontext=system_u:system_r:initrc_t:s0 tclass=dbus
+                                   exe="/usr/bin/dbus-daemon" sauid=81 hostname=? addr=? terminal=?'
+Jul 27 16:15:02 localhost systemd-localed[1366]: Changed X11 keyboard layout to 'us' model '' variant '' options ''
+Jul 27 16:15:02 localhost systemd[1]: Stopping Setup Virtual Console...
+Jul 27 16:15:02 localhost systemd[1]: Starting Setup Virtual Console...
+Jul 27 16:15:02 localhost systemd[1]: Started Setup Virtual Console.
+Jul 27 16:15:04 localhost kernel: type=1400 audit(1469636104.614:19): avc:  denied  { read write } for  pid=1382 comm="dbus-daemon" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:system_dbusd_t:s0-s0:c0.c1023 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file
+Jul 27 16:15:04 localhost kernel: SGI XFS with ACLs, security attributes, no debug enabled
+Jul 27 16:15:05 localhost kernel: type=1400 audit(1469636105.472:20): avc:  denied  { open } for  pid=1219 comm="in:imfile" path="/tmp/X.log" dev="tmpfs" ino=18075 scontext=system_u:system_r:syslogd_t:s0 tcontext=system_u:object_r:user_tmp_t:s0 tclass=file
+Jul 27 16:15:05 localhost kernel: type=1400 audit(1469636105.581:21): avc:  denied  { read write } for  pid=1403 comm="hwclock" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:hwclock_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file
+Jul 27 16:15:05 localhost multipathd[1426]: ok
+Jul 27 16:15:05 localhost systemd[1]: Reloaded Device-Mapper Multipath Device Controller.
+Jul 27 16:15:06 localhost kernel: type=1400 audit(1469636106.000:22): avc:  denied  { ioctl } for  pid=1403 comm="hwclock" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:hwclock_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file
+Jul 27 16:15:06 localhost kernel: type=1400 audit(1469636106.000:23): avc:  denied  { getattr } for  pid=1403 comm="hwclock" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:hwclock_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file
+Jul 27 16:15:06 localhost systemd[1]: Time has been changed
+Jul 27 16:15:07 localhost systemd[1]: Device dev-disk-by\x2dlabel-Anaconda.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-0
+Jul 27 16:15:07 localhost systemd[1]: Device dev-disk-by\x2duuid-a7066ceb\x2d22ca\x2d4a83\x2da020\x2ddc4a879795b7.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-0
+Jul 27 16:15:07 localhost systemd[1]: Device dev-disk-by\x2dlabel-Anaconda.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-1
+Jul 27 16:15:07 localhost systemd[1]: Device dev-disk-by\x2duuid-a7066ceb\x2d22ca\x2d4a83\x2da020\x2ddc4a879795b7.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-1
+Jul 27 16:15:07 localhost systemd[1]: Device dev-disk-by\x2dlabel-Anaconda.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-1
+Jul 27 16:15:07 localhost systemd[1]: Device dev-disk-by\x2duuid-a7066ceb\x2d22ca\x2d4a83\x2da020\x2ddc4a879795b7.device appeared twice with different sysfs paths /sys/devices/virtual/block/loop1 and /sys/devices/virtual/block/dm-1
+Jul 27 16:15:12 localhost kernel: Btrfs loaded
+Jul 27 16:15:12 localhost dbus-daemon[1228]: dbus[1228]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+Jul 27 16:15:12 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit rhel-autorelabel-mark.service is masked.
+Jul 27 16:15:12 localhost systemd[1]: Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit systemd-tmpfiles-clean.timer is masked.
+Jul 27 16:15:12 localhost systemd[1]: Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit rhel-loadmodules.service is masked.
+Jul 27 16:15:12 localhost systemd[1]: Cannot add dependency job for unit rhel-configure.service, ignoring: Unit rhel-configure.service is masked.
+Jul 27 16:15:12 localhost systemd[1]: Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit rhel-autorelabel.service is masked.
+Jul 27 16:15:12 localhost systemd[1]: Starting Hostname Service...
+Jul 27 16:15:12 localhost kernel: SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+Jul 27 16:15:12 localhost dbus-daemon[1228]: dbus[1228]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Jul 27 16:15:12 localhost systemd[1]: Started Hostname Service.
+Jul 27 16:15:12 localhost kernel: type=1107 audit(1469636112.932:24): pid=1228 uid=81 auid=4294967295 ses=4294967295 subj=system_u:system_r:system_dbusd_t:s0-s0:c0.c1023 msg='avc:  denied  { send_msg } for msgtype=method_return dest=:1.127 spid=1489 tpid=1487 scontext=system_u:system_r:systemd_hostnamed_t:s0 tcontext=system_u:system_r:initrc_t:s0 tclass=dbus
+                                   exe="/usr/bin/dbus-daemon" sauid=81 hostname=? addr=? terminal=?'
+Jul 27 16:15:12 localhost systemd-hostnamed[1489]: Changed static host name to 'localhost.localdomain'
+Jul 27 16:15:12 localhost.localdomain systemd-hostnamed[1489]: Changed host name to 'localhost.localdomain'
+Jul 27 17:15:16 localhost.localdomain systemd[1]: Time has been changed
+Jul 27 17:15:16 localhost.localdomain systemd[1]: Time has been changed
+Jul 27 17:15:16 localhost.localdomain systemd[1]: Time has been changed
+Jul 27 17:15:20 localhost.localdomain kernel: type=1400 audit(1469639720.756:25): avc:  denied  { read write } for  pid=1528 comm="hwclock" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:hwclock_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file
+Jul 27 17:15:21 localhost.localdomain kernel: type=1400 audit(1469639721.500:26): avc:  denied  { ioctl } for  pid=1528 comm="hwclock" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:hwclock_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file
+Jul 27 17:15:21 localhost.localdomain kernel: type=1400 audit(1469639721.500:27): avc:  denied  { getattr } for  pid=1528 comm="hwclock" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:hwclock_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file
+Jul 27 17:15:22 localhost.localdomain kernel:  vda: unknown partition table
+Jul 27 17:15:22 localhost.localdomain kernel:  vda:
+Jul 27 17:15:22 localhost.localdomain kernel:  vda:
+Jul 27 17:15:23 localhost.localdomain kernel:  vda: vda1
+Jul 27 17:15:23 localhost.localdomain kernel:  vda: vda1
+Jul 27 17:15:26 localhost.localdomain kernel:  vda: vda1
+Jul 27 17:15:26 localhost.localdomain kernel: XFS (vda1): Mounting V4 Filesystem
+Jul 27 17:15:26 localhost.localdomain kernel: XFS (vda1): Ending clean mount
+Jul 27 17:15:26 localhost.localdomain kernel: SELinux: initialized (dev vda1, type xfs), uses xattr
+Jul 27 17:15:26 localhost.localdomain kernel: SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+Jul 27 17:15:36 localhost.localdomain kernel: type=1400 audit(1469639736.099:28): avc:  denied  { read write } for  pid=1633 comm="ldconfig" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:ldconfig_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file
+Jul 27 17:16:05 localhost.localdomain kernel: type=1400 audit(1469639765.592:29): avc:  denied  { read write } for  pid=1648 comm="ldconfig" path="/dev/pts/0" dev="devpts" ino=3 scontext=system_u:system_r:ldconfig_t:s0 tcontext=system_u:object_r:devpts_t:s0 tclass=chr_file
+Jul 27 17:18:31 localhost.localdomain dbus-daemon[1228]: dbus[1228]: [system] Reloaded configuration
+Jul 27 17:18:46 localhost.localdomain dbus-daemon[1228]: dbus[1228]: [system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service'
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit rhel-autorelabel-mark.service is masked.
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit systemd-tmpfiles-clean.timer is masked.
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit rhel-loadmodules.service is masked.
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Cannot add dependency job for unit rhel-configure.service, ignoring: Unit rhel-configure.service is masked.
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit rhel-autorelabel.service is masked.
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Starting Locale Service...
+Jul 27 17:18:46 localhost.localdomain kernel: SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Started Locale Service.
+Jul 27 17:18:46 localhost.localdomain dbus-daemon[1228]: dbus[1228]: [system] Successfully activated service 'org.freedesktop.locale1'
+Jul 27 17:18:46 localhost.localdomain dbus-daemon[1228]: dbus[1228]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Cannot add dependency job for unit rhel-autorelabel-mark.service, ignoring: Unit rhel-autorelabel-mark.service is masked.
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Cannot add dependency job for unit systemd-tmpfiles-clean.timer, ignoring: Unit systemd-tmpfiles-clean.timer is masked.
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Cannot add dependency job for unit rhel-loadmodules.service, ignoring: Unit rhel-loadmodules.service is masked.
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Cannot add dependency job for unit rhel-configure.service, ignoring: Unit rhel-configure.service is masked.
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Cannot add dependency job for unit rhel-autorelabel.service, ignoring: Unit rhel-autorelabel.service is masked.
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Starting Hostname Service...
+Jul 27 17:18:46 localhost.localdomain kernel: SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+Jul 27 17:18:46 localhost.localdomain dbus-daemon[1228]: dbus[1228]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Jul 27 17:18:46 localhost.localdomain systemd[1]: Started Hostname Service.
+Jul 27 17:18:47 localhost.localdomain kernel: type=1400 audit(1469639927.491:30): avc:  denied  { getattr } for  pid=1926 comm="userdel" path="/home/none/.bash_logout" dev="vda1" ino=12628795 scontext=system_u:system_r:useradd_t:s0 tcontext=system_u:object_r:home_root_t:s0 tclass=file
+Jul 27 17:18:47 localhost.localdomain kernel: type=1400 audit(1469639927.491:31): avc:  denied  { unlink } for  pid=1926 comm="userdel" name=".bash_logout" dev="vda1" ino=12628795 scontext=system_u:system_r:useradd_t:s0 tcontext=system_u:object_r:home_root_t:s0 tclass=file
+Jul 27 17:18:47 localhost.localdomain kernel: type=1400 audit(1469639927.492:32): avc:  denied  { rmdir } for  pid=1926 comm="userdel" name="none" dev="vda1" ino=12628794 scontext=system_u:system_r:useradd_t:s0 tcontext=system_u:object_r:home_root_t:s0 tclass=dir
+Jul 27 17:18:48 localhost.localdomain systemd-tmpfiles[1942]: [/usr/lib/tmpfiles.d/systemd.conf:26] Failed to replace specifiers: /run/log/journal/%m
+Jul 27 17:18:48 localhost.localdomain systemd-tmpfiles[1942]: [/usr/lib/tmpfiles.d/systemd.conf:28] Failed to replace specifiers: /run/log/journal/%m
+Jul 27 17:18:48 localhost.localdomain systemd-tmpfiles[1942]: [/usr/lib/tmpfiles.d/systemd.conf:29] Failed to replace specifiers: /run/log/journal/%m
+Jul 27 17:18:48 localhost.localdomain systemd-tmpfiles[1942]: [/usr/lib/tmpfiles.d/systemd.conf:32] Failed to replace specifiers: /var/log/journal/%m
+Jul 27 17:18:48 localhost.localdomain systemd-tmpfiles[1942]: [/usr/lib/tmpfiles.d/systemd.conf:34] Failed to replace specifiers: /var/log/journal/%m
+Jul 27 17:18:48 localhost.localdomain systemd-tmpfiles[1942]: [/usr/lib/tmpfiles.d/systemd.conf:35] Failed to replace specifiers: /var/log/journal/%m

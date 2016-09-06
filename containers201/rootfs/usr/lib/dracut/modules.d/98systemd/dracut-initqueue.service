@@ -1,0 +1,40 @@
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it
+#  under the terms of the GNU Lesser General Public License as published by
+#  the Free Software Foundation; either version 2.1 of the License, or
+#  (at your option) any later version.
+
+# See systemd.special(7) for details
+
+[Unit]
+Description=dracut initqueue hook
+Documentation=man:dracut-initqueue.service(8)
+DefaultDependencies=no
+Before=remote-fs-pre.target
+Wants=remote-fs-pre.target
+After=systemd-udev-trigger.service
+Wants=systemd-udev-trigger.service
+ConditionPathExists=/etc/initrd-release
+ConditionPathExists=|/lib/dracut/need-initqueue
+ConditionPathExistsGlob=|/lib/dracut/hooks/initqueue/*.sh
+ConditionPathExistsGlob=|/lib/dracut/hooks/initqueue/settled/*.sh
+ConditionPathExistsGlob=|/lib/dracut/hooks/initqueue/finished/*.sh
+ConditionPathExistsGlob=|/lib/dracut/hooks/initqueue/online/*.sh
+ConditionPathExistsGlob=|/lib/dracut/hooks/initqueue/timeout/*.sh
+ConditionKernelCommandLine=|rd.break=initqueue
+
+[Service]
+Environment=DRACUT_SYSTEMD=1
+Environment=NEWROOT=/sysroot
+Type=oneshot
+ExecStart=-/bin/dracut-initqueue
+StandardInput=null
+StandardOutput=syslog
+StandardError=syslog+console
+KillMode=process
+RemainAfterExit=yes
+
+# Bash ignores SIGTERM, so we send SIGHUP instead, to ensure that bash
+# terminates cleanly.
+KillSignal=SIGHUP

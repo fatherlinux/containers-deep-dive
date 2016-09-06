@@ -1,0 +1,148 @@
+[main]
+alwaysprompt = True
+assumeno = False
+assumeyes = False
+autocheck_running_kernel = True
+bandwidth = 0
+bugtracker_url = https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&version=rawhide&component=yum
+cache = 0
+cachedir = /tmp/yum.cache
+check_config_file_age = True
+clean_requirements_on_remove = False
+color = auto
+color_list_available_downgrade = dim,cyan
+color_list_available_install = normal
+color_list_available_reinstall = bold,underline,green
+color_list_available_running_kernel = bold,underline
+color_list_available_upgrade = bold,blue
+color_list_installed_extra = bold,red
+color_list_installed_newer = bold,yellow
+color_list_installed_older = bold
+color_list_installed_reinstall = normal
+color_list_installed_running_kernel = bold,underline
+color_search_match = bold
+color_update_installed = normal
+color_update_local = bold
+color_update_remote = normal
+commands = 
+debuglevel = 3
+deltarpm = 2
+deltarpm_metadata_percentage = 100
+deltarpm_percentage = 75
+depsolve_loop_limit = 100
+diskspacecheck = True
+distroverpkg = system-release(releasever),
+   redhat-release
+enable_group_conditionals = True
+enabled = True
+enablegroups = True
+errorlevel = 6
+exactarch = True
+exactarchlist = 
+exclude = 
+exit_on_lock = False
+failovermethod = priority
+fssnap_abort_on_errors = any
+fssnap_automatic_keep = 1
+fssnap_automatic_post = False
+fssnap_automatic_pre = False
+fssnap_devices = !*/swap,
+   !*/lv_swap
+fssnap_percentage = 100
+gaftonmode = False
+gpgcheck = False
+group_command = objects
+group_package_types = mandatory,
+   default
+groupremove_leaf_only = False
+history_list_view = single-user-commands
+history_record = True
+history_record_packages = yum,
+   rpm
+http_caching = all
+installonly_limit = 3
+installonlypkgs = kernel,
+   kernel-bigmem,
+   installonlypkg(kernel-module),
+   installonlypkg(vm),
+   kernel-enterprise,
+   kernel-smp,
+   kernel-debug,
+   kernel-unsupported,
+   kernel-source,
+   kernel-devel,
+   kernel-PAE,
+   kernel-PAE-debug
+installroot = /mnt/sysimage
+ip_resolve = 
+keepalive = True
+keepcache = False
+kernelpkgnames = kernel,
+   kernel-smp,
+   kernel-enterprise,
+   kernel-bigmem,
+   kernel-BOOT,
+   kernel-PAE,
+   kernel-PAE-debug
+loadts_ignoremissing = False
+loadts_ignorenewrpm = False
+loadts_ignorerpm = False
+localpkg_gpgcheck = False
+logfile = /mnt/sysimage/tmp/yum.log
+max_connections = 0
+mddownloadpolicy = sqlite
+mdpolicy = group:small
+metadata_expire = -1
+metadata_expire_filter = read-only:present
+minrate = 0
+mirrorlist_expire = 86400
+multilib_policy = best
+obsoletes = True
+override_install_langs = 
+overwrite_groups = False
+password = 
+persistdir = /mnt/sysimage/var/lib/yum
+pluginconfpath = /tmp/yum.pluginconf.d,
+   /etc/yum/pluginconf.d,
+   /tmp/updates/pluginconf.d
+pluginpath = /usr/lib/yum-plugins,
+   /tmp/updates/yum-plugins
+plugins = True
+progess_obj = 
+protected_multilib = True
+protected_packages = yum,
+   systemd
+proxy = False
+proxy_password = 
+proxy_username = 
+query_install_excludes = True
+recent = 7
+recheck_installed_requires = False
+remove_leaf_only = False
+repo_gpgcheck = False
+repopkgsremove_leaf_only = False
+reposdir = /tmp/yum.repos.d
+reset_nice = True
+retries = 10
+rpm_check_debug = True
+rpmverbosity = info
+showdupesfromrepos = False
+skip_broken = False
+ssl_check_cert_permissions = True
+sslcacert = 
+sslclientcert = 
+sslclientkey = 
+sslverify = True
+syslog_device = /dev/log
+syslog_facility = LOG_USER
+syslog_ident = 
+throttle = 0
+timeout = 30.0
+tolerant = True
+tsflags = 
+ui_repoid_vars = releasever,
+   basearch
+upgrade_group_objects_upgrade = True
+upgrade_requirements_on_install = False
+username = 
+usr_w_check = True

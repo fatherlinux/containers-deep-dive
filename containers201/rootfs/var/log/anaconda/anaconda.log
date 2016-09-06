@@ -1,0 +1,160 @@
+16:15:01,091 INFO anaconda: /sbin/anaconda 21.48.22.56-1
+16:15:01,448 INFO anaconda: created new libuser.conf at /tmp/libuser.tHE2gc with instPath="/mnt/sysimage"
+16:15:01,450 INFO anaconda: 2097152 kB (2048 MB) are available
+16:15:01,465 INFO anaconda: check_memory(): total:2097152, needed:1070, graphical:1160
+16:15:01,477 INFO anaconda: anaconda called with cmdline = ['/sbin/anaconda']
+16:15:01,477 INFO anaconda: Default encoding = utf-8 
+16:15:01,522 INFO anaconda: Parsing kickstart: /run/install/ks.cfg
+16:15:01,566 INFO anaconda: 2097152 kB (2048 MB) are available
+16:15:02,155 DEBUG anaconda: setting locale to: en_US.UTF-8
+16:15:02,178 DEBUG anaconda: network: devices found ['eth0']
+16:15:02,393 DEBUG anaconda: updating hostname localhost.localdomain
+16:15:02,437 INFO anaconda: Running Thread: AnaWaitForConnectingNMThread (140351496120064)
+16:15:02,441 INFO anaconda: Display mode = g
+16:15:02,445 INFO anaconda: 2097152 kB (2048 MB) are available
+16:15:02,479 INFO anaconda: check_memory(): total:2097152, needed:1070, graphical:1160
+16:15:02,719 DEBUG anaconda: updating hostname localhost.localdomain
+16:15:02,859 INFO anaconda: got 0 NTP servers from DHCP
+16:15:02,860 INFO anaconda: Thread Done: AnaWaitForConnectingNMThread (140351496120064)
+16:15:03,754 DEBUG anaconda: X server has signalled a successful start.
+16:15:03,935 INFO anaconda: Started spice-vdagent.
+16:15:04,764 INFO anaconda: Red Hat Enterprise Linux is the highest priority installclass, using it
+16:15:05,463 INFO anaconda: boot loader GRUB2 on X86 platform
+16:15:05,489 INFO anaconda: boot loader GRUB2 on X86 platform
+16:15:05,490 INFO anaconda: Running Thread: AnaStorageThread (140351496120064)
+16:15:05,541 INFO anaconda: Running Thread: AnaTimeInitThread (140351319107328)
+16:15:05,557 INFO anaconda: Running Thread: AnaPayloadRestartThread (140351310714624)
+16:15:05,578 INFO anaconda: Thread Done: AnaPayloadRestartThread (140351310714624)
+16:15:05,580 INFO anaconda: Running Thread: AnaPayloadThread (140351301269248)
+16:15:06,219 INFO anaconda: Thread Done: AnaTimeInitThread (140351319107328)
+16:15:08,241 INFO anaconda: Thread Done: AnaStorageThread (140351496120064)
+16:15:09,482 DEBUG anaconda: network standalone spoke (init): completed: ['eth0']
+16:15:09,506 DEBUG anaconda: Entered hub: SummaryHub
+16:15:10,098 INFO anaconda: Running Thread: AnaNTPserver1 (140351319107328)
+16:15:10,109 INFO anaconda: Running Thread: AnaNTPserver2 (140351496120064)
+16:15:10,114 INFO anaconda: Running Thread: AnaNTPserver3 (140351310714624)
+16:15:10,119 INFO anaconda: Running Thread: AnaNTPserver4 (140351239350016)
+16:15:10,131 INFO anaconda: Running Thread: AnaDateTimeThread (140351230957312)
+16:15:10,240 INFO anaconda: Running Thread: AnaAddLayoutsInitThread (140351222564608)
+16:15:10,243 DEBUG anaconda: Starting applying <bound method AddLayoutDialog._addLayout of <pyanaconda.ui.gui.spokes.keyboard.AddLayoutDialog object at 0x7fa6157aab50>> on <dictionary-keyiterator object at 0x7fa61341f470>
+16:15:10,253 INFO anaconda: Running Thread: AnaGtkBatchPre1 (140351214171904)
+16:15:10,256 INFO anaconda: Thread Done: AnaGtkBatchPre1 (140351214171904)
+16:15:10,361 INFO anaconda: Running Thread: AnaKeyboardThread (140351214171904)
+16:15:10,573 INFO anaconda: Running Thread: OSCAPguiWaitForDataFetchThread (140351203669760)
+16:15:10,651 INFO anaconda: Running Thread: AnaSourceWatcher (140351194752768)
+16:15:11,711 INFO anaconda: Running Thread: AnaSoftwareWatcher (140351179593472)
+16:15:11,752 INFO anaconda: Running Thread: AnaStorageWatcher (140351171200768)
+16:15:11,753 INFO anaconda: Thread Done: AnaStorageWatcher (140351171200768)
+16:15:11,838 INFO anaconda: Running Thread: AnaCustomStorageInit (140351171200768)
+16:15:11,967 INFO anaconda: 2097152 kB (2048 MB) are available
+16:15:12,426 DEBUG anaconda: network: GUI, device configuration added: connection d28a6d05-38b5-42c4-b325-81fe1d945793 device eth0
+16:15:12,445 DEBUG anaconda: network: GUI, not adding connection d28a6d05-38b5-42c4-b325-81fe1d945793, already in list
+16:15:12,615 DEBUG anaconda: updating hostname localhost.localdomain
+16:15:12,829 INFO anaconda: setting installation environment hostname to localhost.localdomain
+16:15:13,078 INFO anaconda: spoke is not ready: <pyanaconda.ui.gui.spokes.keyboard.KeyboardSpoke object at 0x7fa6157aa9d0>
+16:15:13,081 INFO anaconda: setting <pyanaconda.ui.gui.spokes.keyboard.KeyboardSpoke object at 0x7fa6157aa9d0> status to: Getting list of layouts...
+16:15:13,082 INFO anaconda: setting <org_fedora_oscap.gui.spokes.oscap.OSCAPSpoke object at 0x7fa613424a10> status to: Fetching content data
+16:15:13,085 INFO anaconda: spoke is not ready: <org_fedora_oscap.gui.spokes.oscap.OSCAPSpoke object at 0x7fa613424a10>
+16:15:13,093 INFO anaconda: spoke is not ready: <pyanaconda.ui.gui.spokes.software.SoftwareSelectionSpoke object at 0x7fa613424a90>
+16:15:13,102 INFO anaconda: spoke is not ready: <pyanaconda.ui.gui.spokes.source.SourceSpoke object at 0x7fa613424f10>
+16:15:13,105 INFO anaconda: setting <pyanaconda.ui.gui.spokes.source.SourceSpoke object at 0x7fa613424f10> status to: Setting up installation source...
+16:15:13,106 INFO anaconda: setting <pyanaconda.ui.gui.spokes.source.SourceSpoke object at 0x7fa613424f10> status to: Probing storage...
+16:15:13,109 INFO anaconda: setting <pyanaconda.ui.gui.spokes.source.SourceSpoke object at 0x7fa613424f10> status to: Downloading package metadata...
+16:15:13,109 INFO anaconda: setting <pyanaconda.ui.gui.spokes.software.SoftwareSelectionSpoke object at 0x7fa613424a90> status to: Downloading package metadata...
+16:15:13,110 INFO anaconda: setting <pyanaconda.ui.gui.spokes.software.SoftwareSelectionSpoke object at 0x7fa613424a90> status to: Downloading group metadata...
+16:15:13,110 INFO anaconda: setting <pyanaconda.ui.gui.spokes.storage.StorageSpoke object at 0x7fa61343d290> status to: Probing storage...
+16:15:13,120 INFO anaconda: spoke is ready: <pyanaconda.ui.gui.spokes.storage.StorageSpoke object at 0x7fa61343d290>
+16:15:13,129 INFO anaconda: Running Thread: AnaExecuteStorageThread (140351162275584)
+16:15:13,886 DEBUG anaconda: new disk order: []
+16:15:14,672 INFO anaconda: spoke is not ready: <pyanaconda.ui.gui.spokes.storage.StorageSpoke object at 0x7fa61343d290>
+16:15:14,679 INFO anaconda: setting <pyanaconda.ui.gui.spokes.storage.StorageSpoke object at 0x7fa61343d290> status to: Saving storage configuration...
+16:15:14,834 DEBUG anaconda: new disk order: []
+16:15:15,013 DEBUG anaconda: _is_valid_disklabel(vda) returning True
+16:15:15,014 DEBUG anaconda: _is_valid_size(vda) returning True
+16:15:15,014 DEBUG anaconda: _is_valid_location(vda) returning True
+16:15:15,014 DEBUG anaconda: _is_valid_format(vda) returning True
+16:15:15,014 DEBUG anaconda: is_valid_stage1_device(vda) returning True
+16:15:15,027 INFO anaconda: Running Thread: AnaCheckStorageThread (140351153350400)
+16:15:15,034 INFO anaconda: Thread Done: AnaExecuteStorageThread (140351162275584)
+16:15:15,098 DEBUG anaconda: _is_valid_disklabel(vda) returning True
+16:15:15,098 DEBUG anaconda: _is_valid_size(vda) returning True
+16:15:15,099 DEBUG anaconda: _is_valid_location(vda) returning True
+16:15:15,099 DEBUG anaconda: _is_valid_format(vda) returning True
+16:15:15,099 DEBUG anaconda: is_valid_stage1_device(vda) returning True
+16:15:15,159 DEBUG anaconda: _is_valid_disklabel(vda1) returning True
+16:15:15,160 DEBUG anaconda: _is_valid_size(vda1) returning True
+16:15:15,160 DEBUG anaconda: _is_valid_location(vda1) returning True
+16:15:15,161 DEBUG anaconda: _is_valid_partition(vda1) returning True
+16:15:15,161 DEBUG anaconda: _is_valid_format(vda1) returning True
+16:15:15,162 DEBUG anaconda: is_valid_stage2_device(vda1) returning True
+16:15:15,232 INFO anaconda: Thread Done: AnaNTPserver2 (140351496120064)
+16:15:15,233 INFO anaconda: Thread Done: AnaNTPserver3 (140351310714624)
+16:15:15,247 INFO anaconda: Thread Done: AnaNTPserver4 (140351239350016)
+16:15:15,251 INFO anaconda: Thread Done: AnaNTPserver1 (140351319107328)
+16:15:15,293 WARN anaconda: You have not specified a swap partition.  Although not strictly required in all cases, it will significantly improve performance for most installations.
+16:15:15,294 INFO anaconda: Thread Done: AnaCheckStorageThread (140351153350400)
+16:15:15,386 INFO anaconda: spoke is ready: <pyanaconda.ui.gui.spokes.storage.StorageSpoke object at 0x7fa61343d290>
+16:15:15,395 INFO anaconda: spoke is not ready: <pyanaconda.ui.gui.spokes.storage.StorageSpoke object at 0x7fa61343d290>
+16:15:15,395 INFO anaconda: setting <pyanaconda.ui.gui.spokes.storage.StorageSpoke object at 0x7fa61343d290> status to: Checking storage configuration...
+16:15:15,406 INFO anaconda: spoke is ready: <pyanaconda.ui.gui.spokes.storage.StorageSpoke object at 0x7fa61343d290>
+13:15:16,000 INFO anaconda: System time set to Wed Jul 27 17:15:16 2016 UTC
+13:15:16,000 INFO anaconda: System time set to Wed Jul 27 17:15:16 2016 UTC
+13:15:16,000 INFO anaconda: System time set to Wed Jul 27 17:15:16 2016 UTC
+13:15:16,006 INFO anaconda: Thread Done: AnaDateTimeThread (140351230957312)
+13:15:16,570 INFO anaconda: spoke is ready: <pyanaconda.ui.gui.spokes.datetime_spoke.DatetimeSpoke object at 0x7fa61578ff10>
+13:15:17,104 INFO anaconda: spoke is ready: <org_fedora_oscap.gui.spokes.oscap.OSCAPSpoke object at 0x7fa613424a10>
+13:15:17,108 INFO anaconda: setting <org_fedora_oscap.gui.spokes.oscap.OSCAPSpoke object at 0x7fa613424a10> status to: No profile selected
+13:15:17,650 INFO anaconda: spoke is ready: <org_fedora_oscap.gui.spokes.oscap.OSCAPSpoke object at 0x7fa613424a10>
+13:15:17,863 INFO anaconda: Thread Done: AnaCustomStorageInit (140351171200768)
+13:15:17,864 INFO anaconda: setting <org_fedora_oscap.gui.spokes.oscap.OSCAPSpoke object at 0x7fa613424a10> status to: No profile selected
+13:15:17,872 INFO anaconda: spoke is ready: <org_fedora_oscap.gui.spokes.oscap.OSCAPSpoke object at 0x7fa613424a10>
+13:15:18,079 INFO anaconda: Thread Done: OSCAPguiWaitForDataFetchThread (140351203669760)
+13:15:18,085 INFO anaconda: setting <org_fedora_oscap.gui.spokes.oscap.OSCAPSpoke object at 0x7fa613424a10> status to: No profile selected
+13:15:18,953 INFO anaconda: using environment from kickstart: None
+13:15:18,953 INFO anaconda: Thread Done: AnaPayloadThread (140351301269248)
+13:15:18,955 INFO anaconda: Thread Done: AnaSoftwareWatcher (140351179593472)
+13:15:18,956 DEBUG anaconda: Setting up repos: ['koji-override-0', 'Server-HighAvailability', 'Server-ResilientStorage']
+13:15:18,975 INFO anaconda: Thread Done: AnaSourceWatcher (140351194752768)
+13:15:19,027 INFO anaconda: spoke is ready: <pyanaconda.ui.gui.spokes.software.SoftwareSelectionSpoke object at 0x7fa613424a90>
+13:15:19,030 INFO anaconda: fs space: 4096 MiB  needed: 2861.02 MiB
+13:15:19,053 INFO anaconda: spoke is ready: <pyanaconda.ui.gui.spokes.source.SourceSpoke object at 0x7fa613424f10>
+13:15:19,086 INFO anaconda: fs space: 4096 MiB  needed: 2861.02 MiB
+13:15:19,108 INFO anaconda: spoke is ready: <pyanaconda.ui.gui.spokes.software.SoftwareSelectionSpoke object at 0x7fa613424a90>
+13:15:19,110 INFO anaconda: fs space: 4096 MiB  needed: 2861.02 MiB
+13:15:19,133 INFO anaconda: spoke is ready: <pyanaconda.ui.gui.spokes.source.SourceSpoke object at 0x7fa613424f10>
+13:15:20,298 DEBUG anaconda: Finished applying <bound method AddLayoutDialog._addLayout of <pyanaconda.ui.gui.spokes.keyboard.AddLayoutDialog object at 0x7fa6157aab50>> on <dictionary-keyiterator object at 0x7fa61341f470>
+13:15:20,298 INFO anaconda: Thread Done: AnaAddLayoutsInitThread (140351222564608)
+13:15:20,299 INFO anaconda: Thread Done: AnaKeyboardThread (140351214171904)
+13:15:20,392 INFO anaconda: fs space: 4096 MiB  needed: 2861.02 MiB
+13:15:20,415 INFO anaconda: spoke is ready: <pyanaconda.ui.gui.spokes.keyboard.KeyboardSpoke object at 0x7fa6157aa9d0>
+13:15:20,416 INFO anaconda: _autoContinue clicking continue button
+13:15:20,488 DEBUG anaconda: updating hostname localhost.localdomain
+13:15:20,602 DEBUG anaconda: updating hostname localhost.localdomain
+13:15:20,679 DEBUG anaconda: Left hub: SummaryHub
+13:15:20,679 DEBUG anaconda: Entered hub: ProgressHub
+13:15:20,743 INFO anaconda: setting <pyanaconda.ui.gui.spokes.network.NetworkSpoke object at 0x7fa60d303210> status to: Wired (eth0) connected
+13:15:20,743 INFO anaconda: Running Thread: AnaInstallThread (140351214171904)
+13:15:21,502 INFO anaconda: Setting up the installation environment
+13:15:21,503 INFO anaconda: Setting up the installation environment
+13:15:22,528 INFO anaconda: Creating disklabel on /dev/vda
+13:15:22,777 INFO anaconda: Created disklabel on /dev/vda
+13:15:23,447 INFO anaconda: Creating xfs on /dev/vda1
+13:15:26,116 INFO anaconda: Created xfs on /dev/vda1
+13:18:46,394 INFO anaconda: Performing post-installation setup tasks
+13:18:46,442 INFO anaconda: Performing post-installation setup tasks
+13:18:46,443 INFO anaconda: Thread Done: AnaInstallThread (140351214171904)
+13:18:46,492 INFO anaconda: Running Thread: AnaConfigurationThread (140351214171904)
+13:18:46,493 INFO anaconda: Configuring installed system
+13:18:46,583 INFO anaconda: Configuring installed system
+13:18:46,584 INFO anaconda: Writing network configuration
+13:18:46,585 INFO anaconda: setting installation environment hostname to localhost.localdomain
+13:18:46,741 INFO anaconda: Writing network configuration
+13:18:46,751 INFO anaconda: Creating users
+13:18:46,752 INFO anaconda: Clearing libuser.conf at /tmp/libuser.tHE2gc
+13:18:47,455 INFO anaconda: Creating users
+13:18:47,456 INFO anaconda: Configuring addons
+13:18:47,465 INFO anaconda: Configuring addons
+13:18:47,466 INFO anaconda: Generating initramfs
+13:18:47,467 INFO anaconda: Generating initramfs
+13:18:47,468 INFO anaconda: Running post-installation scripts
+13:18:47,468 INFO anaconda: Running kickstart %%post script(s)

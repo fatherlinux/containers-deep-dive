@@ -1,0 +1,34 @@
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it
+#  under the terms of the GNU Lesser General Public License as published by
+#  the Free Software Foundation; either version 2.1 of the License, or
+#  (at your option) any later version.
+
+# See systemd.special(7) for details
+
+[Unit]
+Description=Dracut Emergency Shell
+DefaultDependencies=no
+After=systemd-vconsole-setup.service
+Wants=systemd-vconsole-setup.service
+Conflicts=emergency.service emergency.target
+ConditionPathExists=!/lib/dracut/no-emergency-shell
+
+[Service]
+Environment=HOME=/
+Environment=DRACUT_SYSTEMD=1
+Environment=NEWROOT=/sysroot
+WorkingDirectory=/
+ExecStart=/bin/dracut-emergency
+ExecStopPost=-/bin/rm -f -- /.console_lock
+Type=oneshot
+StandardInput=tty-force
+StandardOutput=inherit
+StandardError=inherit
+KillMode=process
+IgnoreSIGPIPE=no
+
+# Bash ignores SIGTERM, so we send SIGHUP instead, to ensure that bash
+# terminates cleanly.
+KillSignal=SIGHUP
