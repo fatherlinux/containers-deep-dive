@@ -9,7 +9,7 @@
 		"user": {},
 		"args": [
 			"/usr/bin/sleep",
-			"10"
+			"3"
 		],
 		"env": [
 			"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
