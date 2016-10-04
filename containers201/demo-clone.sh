@@ -1,7 +1,6 @@
 #!/bin/bash
 #
-# Developed with these instructions
-# https://access.redhat.com/documentation/en/red-hat-enterprise-linux-atomic-host/7/paged/getting-started-with-containers/chapter-15-finding-and-running-containers-without-docker-runc-and-skopeo
+# Developed with these instructions: http://red.ht/2doofq4
 
 # Run the container detached from the terminal
 # Had to disable the terminal in config.json ("terminal": false)
